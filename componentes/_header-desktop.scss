@@ -1,0 +1,14 @@
+section.header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    h2 {
+        font-size: 5rem;
+        line-height: 3.8rem;
+    }
+}
+
+.header-container {
+    height: 100px;
+}

@@ -1,0 +1,46 @@
+main {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	section.main-blog-images-container {
+		max-width: 880px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+		flex-wrap: wrap;
+    height: inherit;
+		margin: 50px 0 50px 0;
+		a {
+			text-decoration: none;
+			div.blog-image__container {
+				width: 400px;
+				height: 250px;
+				line-height: 2.4rem;
+				text-shadow: 2px 2px 5px 4px rgba(16, 16 ,16, 0.16);
+        margin-right: 30px;
+				transition: all 500ms;
+				h2 {
+					font-size: 3.5rem;
+					line-height: 2.8rem;
+				}
+			}
+			div.suplementos:hover {
+				transform: scale(1.2) translate(-25px, -15px);
+				opacity: 0.6;
+			}
+			div.accesorios:hover {
+				transform: scale(1.2) translate(25px, -15px);
+				opacity: 0.6;
+			}
+			div.entreno-casa:hover {
+				transform: scale(1.2) translate(-25px, 15px);
+				opacity: 0.6;
+			}
+			div.alimentacion:hover {
+				transform: scale(1.2) translate(25px, 15px);
+				opacity: 0.6;
+			}
+		}
+	}
+}
