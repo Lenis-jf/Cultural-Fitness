@@ -1,0 +1,45 @@
+ul.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 0;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  background-color: fade-out($color: $color_header, $amount: 0.2);
+  left: 0;
+  top: 80px;
+  transition: all 0.5s;
+  li {
+    display: none;
+    margin-top: 80px;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      transition: all 0.2s;
+      background: linear-gradient($color_footer, $color_footer);
+      background-size: 0% 4px;
+      background-position: 50% 100%;
+      background-repeat: no-repeat;
+    }
+    a:hover {
+      color: $color_footer;
+      background-size: 100% 3px;
+    }
+  }
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav-menu {
+  width: 80%;
+}
+
+#check:checked ~ .nav-menu li{
+  display: block;
+}

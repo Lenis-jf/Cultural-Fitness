@@ -1,0 +1,7 @@
+a {
+  font-size: 2.5rem;
+}
+
+#check:checked ~ .nav-menu {
+  width: 40%;
+}
