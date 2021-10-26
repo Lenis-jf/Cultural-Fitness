@@ -32,8 +32,38 @@ ul.nav-menu {
   }
 }
 
+div.menu {
+  display: flex;
+  flex-direction: column;
+  width: 35px;
+  height: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.line {
+  display: block;
+  width: 33px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: $color_footer;
+  transition: all 400ms;
+}
+
 #check {
   display: none;
+}
+
+#check:checked ~ label.menu-container div.menu div.medio {
+  opacity: 0;
+}
+
+#check:checked ~ label.menu-container div.menu div.arriba {
+  transform: rotateZ(45deg) translate(10px, -3px)
+}
+
+#check:checked ~ label.menu-container div.menu div.abajo {
+  transform: rotateZ(-45deg) translate(15px, -2px);
 }
 
 #check:checked ~ .nav-menu {

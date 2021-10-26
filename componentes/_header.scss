@@ -20,10 +20,11 @@ header {
             margin-right: 30px;
         }
         .logo-container {
-            display: inline-block;
-            width: fit-content;
+            display: flex;
+            width: auto;
             height: auto;
-            padding-right: 25px;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
