@@ -4,7 +4,7 @@ ul.nav-menu {
   align-items: center;
   width: 0;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   text-align: center;
   background-color: fade-out($color: $color_header, $amount: 0.2);
   left: 0;

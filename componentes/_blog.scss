@@ -1,4 +1,4 @@
-body.suplementos-body {
+body.blog__body {
   margin-bottom: 80px;
 }
 
@@ -10,7 +10,7 @@ a.home-icon {
   padding-bottom: 5px;
 }
 
-main {
+main.blog__main {
   width: 100%;
   min-width: 320px;
   height: 100%;
@@ -31,7 +31,7 @@ main section.blog-info {
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
-    span.los-mejores {
+    span.titulo-azul {
       font-size: 3rem;
       color: $color_header;
       font-family: $fuente_titulos;
@@ -40,7 +40,7 @@ main section.blog-info {
       text-shadow: none;
       padding-right: 5px;
     }
-    span.suplementos-deportivos {
+    span.titulo-negro {
       font-size: 3rem;
       color: $color_footer;
       font-family: $fuente_titulos;
@@ -50,11 +50,11 @@ main section.blog-info {
     }
   }
   p {
-    line-height: 1.7rem;
+    line-height: 1.8rem;
   }
 }
 
-div.img-creatina-container {
+div.blog__image__container {
   width: 100%;
   max-width: 400px;
   min-width: 320px;
@@ -80,7 +80,7 @@ h3.titulo-info {
 	margin-top: 20px;
 }
 
-main section.suplementos {
+main section.blog__info--title {
   padding: 0px 18px 30px 18px;
   color: $color_footer;
   text-align: justify;
@@ -88,56 +88,57 @@ main section.suplementos {
   min-width: 320px;
   max-width: 500px;
   margin: 0 auto;
-	article.aminoacidos {
+	article.blog__info--body--last {
 		margin-bottom: 20px;
 	}
-  article.suplementos-info {
+  article.blog__info--body {
     color: $color_footer;
     font-size: 1.2rem;
     font-family: $fuente_texto;
-		ul.beneficios-lista {
+		ul.benefits-list {
 			margin-left: 15px;
 		}
-		div.articles-button {
+		div.recommended-button__container {
 			width: 100%;
 			height: auto;
 			display: flex;
 			justify-content: center;
 			margin-top: 20px;
-			a.recommended--button {
+			a.recommended-button {
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				font-size: 1.2rem;
 				font-family: $fuente_titulos;
 				font-weight: 300;
-				width: 130px;
-				height: 20px;
-				padding: 2px 2px 2px 2px;
+				width: 140px;
+				height: 25px;
 				border-radius: 30px;
 				border: 1.5px solid $color_header;
 				background-color: white;
 				color: $color_header;
-				text-align: center;
-				transition: all 100ms;
+				transition: all 300ms;
         text-decoration: none;
 			}
-			a.recommended--button:hover {
+			a.recommended-button:hover {
 				color: white;
 				background-color: $color_header;
+        transform: scale(1.3);
 			}
-			a.recommended--button:active {
+			a.recommended-button:active {
 				color: white;
 				background-color: $color_header;
+        transform: scale(1.3);
 			}
 		}
     h4 {
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-family: $fuente_titulos;
       font-weight: 300;
     }
     P {
       margin-bottom: 20px;
+      font-size: 1.2rem;
     }
   }
 }

@@ -1,0 +1,40 @@
+main section.blog-info {
+  font-size: 1.5rem;
+  max-width: 650px;
+  p {
+    line-height: 2rem;
+  }
+}
+
+div.blog__image__container {
+  max-width: 610px;
+  max-height: 500px;
+}
+
+main section.blog__info--title {
+  max-width: 650px;
+  article.blog__info--body {
+    font-size: 1.5rem;
+		ul.benefits-list {
+      font-size: 1.5rem;
+		}
+		div.recommended-button__container {
+			a.recommended-button {
+				font-size: 1.3rem;
+				width: 150px;
+				height: 25px;
+			}
+    }
+    h4 {
+      font-size: 2.3rem;
+    }
+    P {
+      margin-bottom: 30px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+hr.section-separator {
+	max-width: 610px;
+}
