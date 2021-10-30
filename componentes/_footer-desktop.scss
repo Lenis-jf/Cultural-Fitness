@@ -1,12 +1,9 @@
 footer {
-  position: absolute;
-  bottom: 0;
   .contact {
     font-size: 1.7rem;
-    margin-bottom: 5px;
   }
   div.footer-icons__container {
-    justify-content: space-evenly;
+    justify-content: space-around;
     a {
       span.icon {
         width: 27px;
