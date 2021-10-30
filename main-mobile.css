@@ -241,16 +241,16 @@ main.index section.main-blog-images-container a div.blog-image__container h2 {
 		color: white;
 }
 main.index section.main-blog-images-container a div.suplementos {
-		background-image: url("../componentes/imgs/suplementos.jpeg");
+		background-image: url("./componentes/imgs/suplementos.jpeg");
 }
 main.index section.main-blog-images-container a div.accesorios {
-		background-image: url("../componentes/imgs/accesorios.jpeg");
+		background-image: url("./componentes/imgs/accesorios.jpeg");
 }
 main.index section.main-blog-images-container a div.entreno-casa {
-		background-image: url("../componentes/imgs/entreno-casa.jpeg");
+		background-image: url("./componentes/imgs/entreno-casa.jpeg");
 }
 main.index section.main-blog-images-container a div.alimentacion {
-		background-image: url("../componentes/imgs/alimentacion.jpeg");
+		background-image: url("./componentes/imgs/alimentacion.jpeg");
 }
 
 body.blog__body {
