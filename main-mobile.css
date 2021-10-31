@@ -63,7 +63,7 @@ header .header-container .logo-container {
 section.header-image {
 		height: 165px;
 		text-align: center;
-		background-image: url("../componentes/imgs/mancuernas.jpg");
+		background-image: url("./componentes/imgs/mancuernas.jpg");
 		background-size: cover;
 		background-position: center;
 		-webkit-box-shadow: 0px 6px 5px rgba(16, 16, 16, 0.16);
@@ -478,19 +478,19 @@ footer div.footer-icons__container a span.icon {
 		height: 22px;
 }
 footer div.footer-icons__container a span.instagram {
-		background-image: url("../componentes/icons/instagram.svg");
+		background-image: url("./componentes/icons/instagram.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 }
 footer div.footer-icons__container a span.mail {
-		background-image: url("../componentes/icons/mail.svg");
+		background-image: url("./componentes/icons/mail.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 }
 footer div.footer-icons__container a span.whatsapp {
-		background-image: url("../componentes/icons/whatsapp.svg");
+		background-image: url("./componentes/icons/whatsapp.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
