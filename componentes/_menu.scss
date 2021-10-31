@@ -39,6 +39,12 @@ div.menu {
   height: 30px;
   justify-content: space-evenly;
   align-items: center;
+  cursor: pointer;
+  transition: opacity 300ms;
+}
+
+div.menu:hover {
+  opacity: 0.8;
 }
 
 div.line {
