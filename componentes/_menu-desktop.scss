@@ -5,3 +5,7 @@ a {
 #check:checked ~ .nav-menu {
   width: 40%;
 }
+
+UL.nav-menu {
+  top: 100px;
+}

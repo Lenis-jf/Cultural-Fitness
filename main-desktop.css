@@ -12,12 +12,10 @@ html {
 }
 
 header {
+		position: relative;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
@@ -27,34 +25,26 @@ header {
 		background-color: #49b7f2;
 }
 header .menu-container {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		margin-left: 15px;
+		position: absolute;
+		left: 0;
+		margin-left: 10px;
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
 		height: -webkit-fit-content;
 		height: -moz-fit-content;
 		height: fit-content;
-		-webkit-transform: translateX(-40px);
-		        transform: translateX(-40px);
 }
 header .logo-container {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		position: absolute;
+		right: 0;
+		margin-right: calc(50% - 100px);
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
 		height: -webkit-fit-content;
 		height: -moz-fit-content;
 		height: fit-content;
-		-webkit-transform: translateX(-29px);
-		        transform: translateX(-29px);
 }
 
 ul.nav-menu {
@@ -77,6 +67,9 @@ ul.nav-menu {
 		top: 80px;
 		-webkit-transition: all 0.5s;
 		transition: all 0.5s;
+		border-radius: 0 0 20px 0;
+		-webkit-box-shadow: 6px 5px 14px 3px rgba(148, 148, 148, 0.58);
+		        box-shadow: 6px 5px 14px 3px rgba(148, 148, 148, 0.58);
 }
 ul.nav-menu li {
 		display: none;
@@ -208,7 +201,7 @@ main.index div.shipping-box {
 main.index div.question-mark {
 		background-image: url("./componentes/icons/question.svg");
 }
-main.index div.home-paragraph__container {
+main.index div.paragraphs__container {
 		width: 100%;
 		height: -webkit-fit-content;
 		height: -moz-fit-content;
@@ -218,14 +211,14 @@ main.index div.home-paragraph__container {
 		margin-top: 30px;
 		margin-bottom: 30px;
 }
-main.index div.home-paragraph__container p {
+main.index div.paragraphs__container p.paragraph {
 		font-family: "Roboto", sans-serif;
 		font-size: 1.3rem;
 		font-weight: 400;
 		line-height: 1.523rem;
 		text-align: center;
 }
-main.index div.home-paragraph__container ul {
+main.index div.paragraphs__container ul {
 		margin: 0 auto;
 		margin-top: 20px;
 		font-family: "Roboto", sans-serif;
@@ -238,7 +231,7 @@ main.index div.home-paragraph__container ul {
 		width: -moz-fit-content;
 		width: fit-content;
 }
-main.index div.home-paragraph__container ul li {
+main.index div.paragraphs__container ul li {
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
@@ -576,6 +569,47 @@ main.blog__main {
 		opacity: 0.7;
 }
 
+a.blog-representative__image--container img.blog-representative__image {
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 100%;
+		max-width: 350px;
+		height: 160px;
+		padding: 0 15px 0 15px;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+}
+
+a.blog-representative__image--container img.blog-representative__image:hover {
+		-webkit-transform: scale(1.2);
+		        transform: scale(1.2);
+		opacity: 0.8;
+}
+
+a.read-more {
+		display: inline-block;
+		color: #49b7f2;
+		font-size: 1.4rem;
+		font-family: "Roboto", sans-serif;
+		font-weight: 500;
+		text-decoration: none;
+		margin-left: calc(100% - 55px);
+		margin-top: 10px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#49b7f2), to(#49b7f2));
+		background: linear-gradient(#49b7f2, #49b7f2);
+		background-size: 0% 2px;
+		background-position: 50% 100%;
+		background-repeat: no-repeat;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+}
+
+a.read-more:hover {
+		color: #49b7f2;
+		background-size: 100% 2px;
+}
+
 * {
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
@@ -589,8 +623,11 @@ html {
 		position: relative;
 }
 
-.header-container {
+.header {
 		height: 100px;
+}
+.header .menu-container {
+		margin-left: 20px;
 }
 
 a {
@@ -599,6 +636,10 @@ a {
 
 #check:checked ~ .nav-menu {
 		width: 40%;
+}
+
+UL.nav-menu {
+		top: 100px;
 }
 
 main section.blog-info {

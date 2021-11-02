@@ -1,23 +1,23 @@
 header {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     min-width: 320px;
     height: 80px;
     background-color: $color_header;
     .menu-container {
-        display: flex;
-        margin-left: 15px;
+        position: absolute;
+        left: 0;
+        margin-left: 10px;
         width: fit-content;
         height: fit-content;
-        transform: translateX(-40px);
     }
     .logo-container {
-        display: flex;
-        justify-content: center;
+        position: absolute;
+        right: 0;
+        margin-right: calc(50% - 100px);
         width: fit-content;
         height: fit-content;
-        transform: translateX(-29px);
     }
 }

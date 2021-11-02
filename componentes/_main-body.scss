@@ -43,14 +43,14 @@ main.index {
 	div.question-mark {
 		background-image: url("./componentes/icons/question.svg");
 	}
-	div.home-paragraph__container {
+	div.paragraphs__container {
 		width: 100%;
 		height: fit-content;
 		max-width: 300px;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
-		p {
+		p.paragraph {
 			font-family: $fuente_texto;
 			font-size: 1.3rem;
 			font-weight: 400;

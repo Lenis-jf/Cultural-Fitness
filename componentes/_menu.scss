@@ -10,6 +10,8 @@ ul.nav-menu {
   left: 0;
   top: 80px;
   transition: all 0.5s;
+  border-radius: 0 0 20px 0;
+  box-shadow: 6px 5px 14px 3px rgba(148,148,148,0.58);
   li {
     display: none;
     margin-top: 80px;
