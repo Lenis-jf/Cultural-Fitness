@@ -1,5 +1,6 @@
 header {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     min-width: 320px;
@@ -10,11 +11,13 @@ header {
         margin-left: 15px;
         width: fit-content;
         height: fit-content;
+        transform: translateX(-40px);
     }
     .logo-container {
         display: flex;
-        margin: 0 auto;
+        justify-content: center;
         width: fit-content;
         height: fit-content;
+        transform: translateX(-29px);
     }
 }
