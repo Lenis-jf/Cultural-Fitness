@@ -1,60 +1,105 @@
-body.home-body {
-	margin-bottom: 90px;
-}
-
 main.index {
 	width: 100%;
 	min-width: 320px;
 	height: 100%;
-	section.main-blog-images-container {
+	color: $color_footer;
+	h1 {
+		font-family: $fuente_titulos;
+		font-size: 3rem;
+		font-weight: 400;
+		line-height: 25px;
+		text-align: center;
+		margin-top: 40px;
+	}
+	h2 {
+		font-family: $fuente_texto;
+		font-weight: 400;
+		font-size: 1.6rem;
+		text-align: center;
+		margin-top: 20px;
+		font-weight: 500;
+	}
+	div.home-icon__container {
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 68px;
+		height: 68px;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	div.trophy {
+		background-image: url("./componentes/icons/trophy.svg");
+	}
+	div.sand-clock {
+		background-image: url("./componentes/icons/hourglass-start-solid.svg");
+	}
+	div.paper {
+		background-image: url("./componentes/icons/blog.svg");
+	}
+	div.shipping-box {
+		background-image: url("./componentes/icons/package.svg");
+	}
+	div.question-mark {
+		background-image: url("./componentes/icons/question.svg");
+	}
+	div.home-paragraph__container {
 		width: 100%;
-		min-width: 320px;
-		height: auto;
-		padding: 0px 10px 20px 10px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: $color_body;
-		a {
-			width: auto;
-			height: auto;
-			text-decoration: none;
-			div.blog-image__container {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 280px;
-				height: 150px;
-				min-width: 266px;
-				min-height: 143px;
-				margin-top: 20px;
-				text-align: center;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-				box-shadow:  0px 8px 20px 0px rgba(153,153,153,0.7);
-				line-height: 2.1rem;
-				text-shadow: 2px 2px 5px 4px rgba(16, 16 ,16, 0.16);
-				cursor: pointer;
-				h2 {
-					font-family: $fuente_titulos;
-					font-size: 2.4rem;
-					font-weight: 300;
-					color: white;
-				}
-			}
-			div.suplementos {
-				background-image: url("./componentes/imgs/suplementos.jpeg");
-			}
-			div.accesorios {
-				background-image: url("./componentes/imgs/accesorios.jpeg");
-			}
-			div.entreno-casa {
-				background-image: url("./componentes/imgs/entreno-casa.jpeg");
-			}
-			div.alimentacion {
-				background-image: url("./componentes/imgs/alimentacion.jpeg");
+		height: fit-content;
+		max-width: 300px;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		p {
+			font-family: $fuente_texto;
+			font-size: 1.3rem;
+			font-weight: 400;
+			line-height: 1.523rem;
+			text-align: center;
+		}
+		ul {
+			margin: 0 auto;
+			margin-top: 20px;
+			font-family: $fuente_texto;
+			font-weight: 400;
+			font-size: 1.3rem;
+			line-height: 1.523rem;
+			text-align: center;
+			list-style: disc;
+			width: fit-content;
+			li {
+				width: fit-content;
 			}
 		}
 	}
+	a.home-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 220px;
+		height: 35px;
+		margin: 0 auto;
+		margin-top: 90px;
+		margin-bottom: 90px;
+		border: 1.5px solid $color_header;
+		color: $color_header;
+		border-radius: 15px;
+		font-family: $fuente_texto;
+		font-weight: 500;
+		font-size: 1.5rem;
+		text-decoration: none;
+		text-align: center;
+		transition: all 300ms;
+	}
+	a.home-button:hover {
+		color: white;
+		background-color: $color_header;
+		transform: scale(1.3);
+	}
+	a.home-button:active {
+		color: white;
+		background-color: $color_header;
+		transform: scale(1.3);
+	}
+
 }
