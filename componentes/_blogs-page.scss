@@ -4,7 +4,7 @@ a.blog-representative__image--container img.blog-representative__image {
   margin-top: 20px;
   width: 100%;
   max-width: 350px;
-  height: 160px;
+  height: 180px;
   padding: 0 15px 0 15px;
   transition: all 0.3s;
 }
@@ -12,6 +12,7 @@ a.blog-representative__image--container img.blog-representative__image {
 a.blog-representative__image--container img.blog-representative__image:hover {
   transform: scale(1.2);
   opacity: 0.8;
+  filter: grayscale(50%);
 }
 
 a.read-more {
