@@ -29,6 +29,9 @@ main.index {
 		margin-top: 20px;
 		font-weight: 500;
 	}
+	h2.h2-especial {
+		margin-top: 60px;
+	}
 	div.home-icon__container {
 		margin: 0 auto;
 		margin-top: 30px;
@@ -67,6 +70,9 @@ main.index {
 			line-height: 1.523rem;
 			text-align: center;
 		}
+		p.parrafo-especial {
+			margin-bottom: 60px;
+		}
 		ul {
 			margin: 0 auto;
 			margin-top: 20px;
@@ -87,7 +93,7 @@ main.index {
 			} 
 		}
 	}
-	a.home-button {
+	button.home-button {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -97,23 +103,19 @@ main.index {
 		margin-top: 90px;
 		margin-bottom: 90px;
 		border: 1.5px solid $color_header;
-		color: $color_header;
 		border-radius: 15px;
-		font-family: $fuente_texto;
-		font-weight: 500;
-		font-size: 1.5rem;
-		text-decoration: none;
-		text-align: center;
 		transition: all 300ms;
-	}
-	a.home-button:hover {
-		color: white;
-		background-color: $color_header;
-		transform: scale(1.3);
-	}
-	a.home-button:focus {
-		color: white;
-		background-color: $color_header;
-		transform: scale(1.3);
+		background: white;
+		a.button-text {
+			color: $color_header;
+			font-family: $fuente_texto;
+			font-weight: 500;
+			font-size: 1.5rem;
+			text-decoration: none;
+			text-align: center;
+		}
+		div.right-arrow {
+			display: none;
+		}
 	}
 }
