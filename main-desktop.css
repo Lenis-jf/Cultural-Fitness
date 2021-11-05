@@ -61,11 +61,11 @@ ul.nav-menu {
 		        align-items: center;
 		width: 0;
 		height: auto;
-		position: absolute;
+		position: relative;
 		text-align: center;
 		background-color: rgba(73, 183, 242, 0.8);
 		left: 0;
-		top: 80px;
+		top: 369.5px;
 		-webkit-transition: all 0.5s;
 		transition: all 0.5s;
 		border-radius: 0 0 20px 0;
@@ -723,7 +723,7 @@ a {
 		width: 40%;
 }
 
-UL.nav-menu {
+ul.nav-menu {
 		top: 100px;
 }
 
@@ -731,25 +731,35 @@ body.home-body {
 		-webkit-transition: all 300ms;
 		transition: all 300ms;
 }
-
-main.index div.dark-mode__container {
-		position: fixed;
-		bottom: 40px;
-		right: 200px;
-		display: block;
+body.home-body .dark-mode__container {
+		position: absolute;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		top: calc(50px - 15px);
+		right: 100px;
 		width: auto;
 		height: auto;
 }
-main.index div.dark-mode__container svg.sun {
+body.home-body .dark-mode__container span {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		margin-right: 10px;
+		font-size: 13px;
+		font-weight: 300;
+		color: white;
+}
+body.home-body .dark-mode__container svg.sun {
 		margin-right: 13px;
 }
-main.index div.dark-mode__container svg.moon {
+body.home-body .dark-mode__container svg.moon {
 		margin-left: 13px;
 }
-main.index div.dark-mode__container input#dark-mode {
-		display: none;
-}
-main.index div.dark-mode__container label#dark-mode-button__container {
+body.home-body .dark-mode__container div#dark-mode-button__container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -760,25 +770,25 @@ main.index div.dark-mode__container label#dark-mode-button__container {
 		-webkit-box-pack: space-evenly;
 		    -ms-flex-pack: space-evenly;
 		        justify-content: space-evenly;
-		background-color: #eeeeec;
+		background-color: #fdfdfc;
 		width: 80px;
 		height: 30px;
 		border: 2px solid #363636;
 		border-radius: 20px;
-		margin-bottom: 90px;
 		overflow: hidden;
+		cursor: pointer;
 }
-main.index div.dark-mode__container label#dark-mode-button__container div.circle {
+body.home-body .dark-mode__container div#dark-mode-button__container div.circle {
 		position: absolute;
-		left: calc(50% - 40px);
-		width: 30px;
-		height: 30px;
+		left: 0.5px;
+		width: 25px;
+		height: 24px;
 		border-radius: 50%;
 		background-color: #363636;
+		-webkit-box-shadow: 0px 0px 5px 0px #363636;
+		        box-shadow: 0px 0px 5px 0px #363636;
 }
-main.index #dark-mode:checked ~ label#dark-mode-button__container div.circle {
-		left: calc(100% - 30px);
-}
+
 main.index button.home-button {
 		width: 235px;
 		position: relative;
@@ -875,6 +885,10 @@ body.darkmode button.home-button:hover {
 }
 body.darkmode button.home-button:hover a.button-text {
 		color: #49b7f2;
+}
+body.darkmode .dark-mode__container div#dark-mode-button__container div.circle {
+		left: calc(100% - 24.5px);
+		background-color: white;
 }
 body.darkmode footer {
 		background-color: #49b7f2;

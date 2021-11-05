@@ -61,11 +61,11 @@ ul.nav-menu {
 		        align-items: center;
 		width: 0;
 		height: auto;
-		position: absolute;
+		position: relative;
 		text-align: center;
 		background-color: rgba(73, 183, 242, 0.8);
 		left: 0;
-		top: 80px;
+		top: 369.5px;
 		-webkit-transition: all 0.5s;
 		transition: all 0.5s;
 		border-radius: 0 0 20px 0;

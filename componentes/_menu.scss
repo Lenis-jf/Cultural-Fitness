@@ -4,11 +4,11 @@ ul.nav-menu {
   align-items: center;
   width: 0;
   height: auto;
-  position: absolute;
+  position: relative;
   text-align: center;
   background-color: fade-out($color: $color_header, $amount: 0.2);
   left: 0;
-  top: 80px;
+  top: 369.5px;
   transition: all 0.5s;
   border-radius: 0 0 20px 0;
   .last-child {

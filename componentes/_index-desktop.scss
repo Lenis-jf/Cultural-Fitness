@@ -1,51 +1,52 @@
 body.home-body {
   transition: all 300ms;
-}
-
-main.index {
-  div.dark-mode__container {
-    position: fixed;
-    bottom: 40px;
-    right: 200px;
-    display: block;
+  .dark-mode__container {
+    position: absolute;
+    display: flex;
+    top: calc(50px - 15px);
+    right: 100px;
     width: auto;
     height: auto;
+    span {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      font-size: 13px;
+      font-weight: 300;
+      color: white;
+    }
     svg.sun {
       margin-right: 13px;
     }
     svg.moon {
       margin-left: 13px;
     }
-    input#dark-mode {
-      display: none;
-    }
-    label#dark-mode-button__container {
+    div#dark-mode-button__container {
       display: flex;
       position: relative;
       align-items: center;
       justify-content: space-evenly;
-      background-color: #eeeeec;
+      background-color: #fdfdfc;
       width: 80px;
       height: 30px;
       border: 2px solid $color_footer;
       border-radius: 20px;
-      margin-bottom: 90px;
       overflow: hidden;
+      cursor: pointer;
       div.circle {
         position: absolute;
-        left: calc(50% - 40px);
-        width: 30px;
-        height: 30px;
+        left: 0.5px;
+        width: 25px;
+        height: 24px;
         border-radius: 50%;
         background-color: $color_footer;
+        box-shadow: 0px 0px 5px 0px $color_footer;
       }
     }
   }
+}
 
-  #dark-mode:checked ~ label#dark-mode-button__container div.circle {
-    left: calc(100% - 30px);
-  }
-  
+main.index {
   button.home-button {
     width: 235px;
     position: relative;
@@ -129,6 +130,14 @@ body.darkmode {
   }
   button.home-button:hover a.button-text {
     color: $color_header;
+  }
+  .dark-mode__container {
+    div#dark-mode-button__container {
+      div.circle {
+      left: calc(100% - 24.5px);
+      background-color: white;
+      }
+    }
   }
   footer {
     background-color: $color_header;
