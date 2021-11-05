@@ -1,14 +1,62 @@
+body.home-body {
+  transition: all 300ms;
+}
+
 main.index {
+  div.dark-mode__container {
+    position: fixed;
+    bottom: 40px;
+    right: 200px;
+    display: block;
+    width: auto;
+    height: auto;
+    svg.sun {
+      margin-right: 13px;
+    }
+    svg.moon {
+      margin-left: 13px;
+    }
+    input#dark-mode {
+      display: none;
+    }
+    label#dark-mode-button__container {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #eeeeec;
+      width: 80px;
+      height: 30px;
+      border: 2px solid $color_footer;
+      border-radius: 20px;
+      margin-bottom: 90px;
+      overflow: hidden;
+      div.circle {
+        position: absolute;
+        left: calc(50% - 40px);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $color_footer;
+      }
+    }
+  }
+
+  #dark-mode:checked ~ label#dark-mode-button__container div.circle {
+    left: calc(100% - 30px);
+  }
+  
   button.home-button {
     width: 235px;
     position: relative;
-    transition: all 400ms ease-in-out;
+    transition: all 500ms ease-in-out;
     overflow: hidden;
     cursor: pointer;
     a.button-text {
       position: absolute;
       left: calc(50% - 40px);
-      transition: all 400ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 2;
     }
     a.leer-ahora {
       left: calc(50% - 43px);
@@ -25,12 +73,27 @@ main.index {
       opacity: 0;
       position: absolute;
       left: -40px;
-      transition: all 400ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      z-index: 2;
     }
+  }
+  button.home-button::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    background-color: $color_header;
+    transition: all 500ms ease-in-out;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  button.home-button:hover::before {
+    transform-origin: center;
+    transform: scale(250);
   }
   button.home-button:hover {
     background-color: $color_header;
-    transform: scale(1);
   }
   button.home-button:hover a.button-text {
     color: white;
@@ -39,5 +102,42 @@ main.index {
   button.home-button:hover div.right-arrow {
     opacity: 1;
     left: calc(100% - 40px);
+  }
+}
+
+body.darkmode {
+  background-color: $color_footer;
+  color: white;
+  transition: all 300ms;
+  svg.icon {
+    fill: white;
+  }
+  svg path.right-arrow--path {
+    fill: $color_header;
+  }
+  button.home-button {
+    background-color: $color_header;
+    a.button-text {
+      color: white;
+    }
+  }
+  button.home-button::before {
+    background-color: white;
+  }
+  button.home-button:hover {
+    background-color: white;
+  }
+  button.home-button:hover a.button-text {
+    color: $color_header;
+  }
+  footer {
+    background-color: $color_header;
+    color: white;
+    div.footer-icons__container {
+      background-color: $color_header;
+    }
+    span.icon svg {
+      fill: white;
+    }
   }
 }

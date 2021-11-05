@@ -3,7 +3,7 @@ ul.nav-menu {
   flex-direction: column;
   align-items: center;
   width: 0;
-  height: 100vh;
+  height: auto;
   position: absolute;
   text-align: center;
   background-color: fade-out($color: $color_header, $amount: 0.2);
@@ -11,10 +11,12 @@ ul.nav-menu {
   top: 80px;
   transition: all 0.5s;
   border-radius: 0 0 20px 0;
-  box-shadow: 6px 5px 14px 3px rgba(148,148,148,0.58);
+  .last-child {
+    margin-bottom: 50px;
+  }
   li {
     display: none;
-    margin-top: 80px;
+    margin-top: 50px;
     a {
       text-decoration: none;
       color: white;
