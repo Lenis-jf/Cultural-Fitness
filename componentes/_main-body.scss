@@ -8,8 +8,14 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 5px;
 }
 
-body.home-body {
+body {
 	transition: all 300ms;
+	background-color: $color_header;
+	main {
+		padding: 60px 0 60px 0;
+		background-color: white;
+		transition: all 300ms;
+	}
 	.dark-mode__container {
 		display: none;
 	}
@@ -25,7 +31,6 @@ h1 {
 	font-weight: 400;
 	line-height: 25px;
 	text-align: center;
-	margin-top: 40px;
 }
 h2 {
 	font-family: $fuente_texto;
@@ -62,7 +67,7 @@ div.paragraphs__container {
 		text-align: center;
 	}
 	p.parrafo-especial {
-		margin-bottom: 60px;
+		margin-bottom: 0;
 	}
 	ul {
 		margin: 0 auto;
@@ -112,9 +117,11 @@ button.home-button {
 }
 
 body.darkmode {
-  background-color: $color_footer;
   color: white;
-  transition: all 300ms;
+	main {
+		transition: all 300ms;
+		background-color: $color_footer;
+	}
   svg.icon {
     fill: white;
   }
@@ -148,4 +155,32 @@ body.darkmode {
       fill: white;
     }
   }
+	section.blog-info {
+		color: white;
+		div.titulo-blog {
+			span.titulo-negro {
+				color: white;
+			}
+		}
+	}
+	section.blog__info--title {
+		article.blog__info--body {
+			p {
+				color: white;
+			}
+			h4 {
+				color: white;
+			}
+			div.recommended-button__container {
+				a.recommended-button {
+					color: white;
+					background-color: $color_header;
+				}
+				a.recommended-button:hover {
+					color: $color_header;
+					background-color: white;
+				}
+			}
+		}
+	}
 }

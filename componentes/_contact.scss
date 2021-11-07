@@ -2,6 +2,10 @@ footer.footer--contact-page {
   display: none;
 }
 
+main.contact {
+  height: calc(100vh - 80px);
+}
+
 div.contact-icons__container--contact-page {
   display: flex;
   justify-content: space-evenly;
@@ -34,10 +38,9 @@ div.contact-icons__container--contact-page {
 div.dumbel {
   width: 100px;
   height: 100px;
-  background-image: url("./componentes/icons/dumbbell.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 80px;
+  margin-bottom: 40px;
 }
+
+

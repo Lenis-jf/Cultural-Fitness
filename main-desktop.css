@@ -39,13 +39,16 @@ header .menu-container {
 header .logo-container {
 		position: absolute;
 		right: 0;
-		margin-right: calc(50% - 100px);
+		margin-right: calc(50% - 110px);
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
 		height: -webkit-fit-content;
 		height: -moz-fit-content;
 		height: fit-content;
+}
+header .logo-container svg {
+		cursor: pointer;
 }
 
 ul.nav-menu {
@@ -209,11 +212,18 @@ body::-webkit-scrollbar-thumb {
 		border-radius: 5px;
 }
 
-body.home-body {
+body {
+		-webkit-transition: all 300ms;
+		transition: all 300ms;
+		background-color: #49b7f2;
+}
+body main {
+		padding: 60px 0 60px 0;
+		background-color: white;
 		-webkit-transition: all 300ms;
 		transition: all 300ms;
 }
-body.home-body .dark-mode__container {
+body .dark-mode__container {
 		display: none;
 }
 
@@ -228,7 +238,6 @@ main.index h1 {
 		font-weight: 400;
 		line-height: 25px;
 		text-align: center;
-		margin-top: 40px;
 }
 main.index h2 {
 		font-family: "Roboto", sans-serif;
@@ -274,7 +283,7 @@ main.index div.paragraphs__container p.paragraph {
 		text-align: center;
 }
 main.index div.paragraphs__container p.parrafo-especial {
-		margin-bottom: 60px;
+		margin-bottom: 0;
 }
 main.index div.paragraphs__container ul {
 		margin: 0 auto;
@@ -329,10 +338,12 @@ main.index button.home-button div.right-arrow {
 }
 
 body.darkmode {
-		background-color: #363636;
 		color: white;
+}
+body.darkmode main {
 		-webkit-transition: all 300ms;
 		transition: all 300ms;
+		background-color: #363636;
 }
 body.darkmode svg.icon {
 		fill: white;
@@ -362,6 +373,26 @@ body.darkmode footer div.footer-icons__container {
 }
 body.darkmode footer span.icon svg {
 		fill: white;
+}
+body.darkmode section.blog-info {
+		color: white;
+}
+body.darkmode section.blog-info div.titulo-blog span.titulo-negro {
+		color: white;
+}
+body.darkmode section.blog__info--title article.blog__info--body p {
+		color: white;
+}
+body.darkmode section.blog__info--title article.blog__info--body h4 {
+		color: white;
+}
+body.darkmode section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button {
+		color: white;
+		background-color: #49b7f2;
+}
+body.darkmode section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button:hover {
+		color: #49b7f2;
+		background-color: white;
 }
 
 main.blog__main {
@@ -452,7 +483,17 @@ main section.blog__info--title article.blog__info--body {
 		font-family: "Roboto", sans-serif;
 }
 main section.blog__info--title article.blog__info--body ul.benefits-list {
+		display: block;
+		width: auto;
+		height: auto;
+		font-family: "Roboto", sans-serif;
+		color: #363636;
+		font-size: 1.2rem;
 		margin-left: 15px;
+}
+main section.blog__info--title article.blog__info--body ul.benefits-list li {
+		margin-top: 5px;
+		display: list-item;
 }
 main section.blog__info--title article.blog__info--body div.recommended-button__container {
 		width: 100%;
@@ -463,7 +504,7 @@ main section.blog__info--title article.blog__info--body div.recommended-button__
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
-		margin-top: 20px;
+		margin-top: 40px;
 }
 main section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button {
 		display: -webkit-box;
@@ -477,7 +518,7 @@ main section.blog__info--title article.blog__info--body div.recommended-button__
 		        justify-content: center;
 		font-size: 1.2rem;
 		font-family: "Bebas Neue", cursive;
-		font-weight: 400;
+		font-weight: 300;
 		width: 140px;
 		height: 25px;
 		border-radius: 30px;
@@ -517,21 +558,6 @@ hr.section-separator {
 		border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 		margin: 0 auto;
 		margin-bottom: 5px;
-}
-
-a.arrow-up {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		width: 50px;
-		height: 50px;
-		background-color: red;
 }
 
 footer {
@@ -726,6 +752,10 @@ footer.footer--contact-page {
 		display: none;
 }
 
+main.contact {
+		height: calc(100vh - 80px);
+}
+
 div.contact-icons__container--contact-page {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -764,12 +794,9 @@ div.contact-icons__container--contact-page div.instagram {
 div.dumbel {
 		width: 100px;
 		height: 100px;
-		background-image: url("./componentes/icons/dumbbell.svg");
-		background-position: center;
-		background-size: contain;
-		background-repeat: no-repeat;
 		margin: 0 auto;
 		margin-top: 80px;
+		margin-bottom: 40px;
 }
 
 * {
@@ -819,11 +846,11 @@ ul.nav-menu li.calculadora {
 		display: none;
 }
 
-body.home-body {
+body {
 		-webkit-transition: all 300ms;
 		transition: all 300ms;
 }
-body.home-body .dark-mode__container {
+body .dark-mode__container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -833,7 +860,7 @@ body.home-body .dark-mode__container {
 		top: calc(50px - 15px);
 		right: 100px;
 }
-body.home-body .dark-mode__container span {
+body .dark-mode__container span {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -845,13 +872,13 @@ body.home-body .dark-mode__container span {
 		font-weight: 300;
 		color: white;
 }
-body.home-body .dark-mode__container object.sun {
+body .dark-mode__container object.sun {
 		margin-right: 13px;
 }
-body.home-body .dark-mode__container object.moon {
+body .dark-mode__container object.moon {
 		margin-left: 13px;
 }
-body.home-body .dark-mode__container div.dark-mode-button__container--class {
+body .dark-mode__container div.dark-mode-button__container--class {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -870,7 +897,7 @@ body.home-body .dark-mode__container div.dark-mode-button__container--class {
 		overflow: hidden;
 		cursor: pointer;
 }
-body.home-body .dark-mode__container div.dark-mode-button__container--class div.circle {
+body .dark-mode__container div.dark-mode-button__container--class div.circle {
 		position: absolute;
 		left: 0.5px;
 		width: 25px;
@@ -1058,4 +1085,8 @@ main.blog__main {
 		-webkit-transform: scale(1.2);
 		        transform: scale(1.2);
 		opacity: 0.7;
+}
+
+main.contact {
+		height: calc(100vh - 100px);
 }
