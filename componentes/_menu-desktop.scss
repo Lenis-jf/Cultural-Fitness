@@ -8,4 +8,14 @@ a {
 
 ul.nav-menu {
   top: 100px;
+  li.last-child {
+    display: none;
+  }
+  li.calculadora {
+    margin-bottom: 50px;
+  }
+}
+
+#check:checked ~ .nav-menu li.last-child{
+  display: none;
 }

@@ -4,16 +4,51 @@ ul.nav-menu {
   align-items: center;
   width: 0;
   height: auto;
-  position: relative;
+  position: absolute;
   text-align: center;
   background-color: fade-out($color: $color_header, $amount: 0.2);
   left: 0;
-  top: 369.5px;
+  top: 80px;
   transition: all 0.5s;
   border-radius: 0 0 20px 0;
   .last-child {
     margin-bottom: 50px;
+    display: none;
+    width: auto;
+    height: auto;
+    span {
+      display: none;
+    }
+    object.sun {
+      margin-right: 13px;
+    }
+    object.moon {
+      margin-left: 13px;
+    }
+    div#dark-mode-button__container {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #fdfdfc;
+      width: 80px;
+      height: 30px;
+      border: 2px solid $color_footer;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      div.circle {
+        position: absolute;
+        left: 0.5px;
+        width: 25px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $color_footer;
+        box-shadow: 0px 0px 5px 0px $color_footer;
+      }
+    }
   }
+}
   li {
     display: none;
     margin-top: 50px;
@@ -33,8 +68,8 @@ ul.nav-menu {
       color: $color_footer;
       background-size: 100% 3px;
     }
-  }
 }
+
 
 div.menu {
   display: flex;
@@ -64,15 +99,15 @@ div.line {
   display: none;
 }
 
-#check:checked ~ label.menu-container div.menu div.medio {
+#check:checked ~ .menu-container div.menu div.medio {
   opacity: 0;
 }
 
-#check:checked ~ label.menu-container div.menu div.arriba {
+#check:checked ~ .menu-container div.menu div.arriba {
   transform: rotateZ(45deg) translate(10px, -3px)
 }
 
-#check:checked ~ label.menu-container div.menu div.abajo {
+#check:checked ~ .menu-container div.menu div.abajo {
   transform: rotateZ(-45deg) translate(15px, -2px);
 }
 

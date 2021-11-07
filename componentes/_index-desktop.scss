@@ -1,12 +1,12 @@
 body.home-body {
   transition: all 300ms;
   .dark-mode__container {
-    position: absolute;
     display: flex;
-    top: calc(50px - 15px);
-    right: 100px;
     width: auto;
     height: auto;
+    position: absolute;
+    top: calc(50px - 15px);
+    right: 100px;
     span {
       display: flex;
       align-items: center;
@@ -15,13 +15,13 @@ body.home-body {
       font-weight: 300;
       color: white;
     }
-    svg.sun {
+    object.sun {
       margin-right: 13px;
     }
-    svg.moon {
+    object.moon {
       margin-left: 13px;
     }
-    div#dark-mode-button__container {
+    div.dark-mode-button__container--class {
       display: flex;
       position: relative;
       align-items: center;
@@ -107,19 +107,12 @@ main.index {
 }
 
 body.darkmode {
-  background-color: $color_footer;
-  color: white;
-  transition: all 300ms;
-  svg.icon {
-    fill: white;
-  }
-  svg path.right-arrow--path {
-    fill: $color_header;
-  }
-  button.home-button {
-    background-color: $color_header;
-    a.button-text {
-      color: white;
+  .dark-mode__container {
+    div.dark-mode-button__container--class {
+      div.circle {
+      left: calc(100% - 24.5px);
+      background-color: white;
+      }
     }
   }
   button.home-button::before {
@@ -130,23 +123,5 @@ body.darkmode {
   }
   button.home-button:hover a.button-text {
     color: $color_header;
-  }
-  .dark-mode__container {
-    div#dark-mode-button__container {
-      div.circle {
-      left: calc(100% - 24.5px);
-      background-color: white;
-      }
-    }
-  }
-  footer {
-    background-color: $color_header;
-    color: white;
-    div.footer-icons__container {
-      background-color: $color_header;
-    }
-    span.icon svg {
-      fill: white;
-    }
   }
 }

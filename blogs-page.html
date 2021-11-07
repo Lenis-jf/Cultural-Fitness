@@ -27,13 +27,28 @@
 			<li><a href="./contacto.html">CONTACTO</a></li>
 			<li><a href="./recomendados.html">PRODUCTOS <br> RECOMENDADOS</a></li>
 			<li><a href="./faq.html">PREGUNTAS <br> FRECUENTES</a></li>
-			<li><a href="./calculadora.html">CALCULADORA <br> CORPORAL</a></li>
+			<li class="calculadora"><a href="./calculadora.html">CALCULADORA <br> CORPORAL</a></li>
+			<li class="last-child dark-mode__container">
+				<div id="dark-mode-button__container">
+					<object class="sun" data="./componentes/icons/sun.svg" type="image/svg+xml"></object>
+					<div class="circle"></div>
+					<object class="moon" data="./componentes/icons/moon.svg" type="image/svg+xml"></object>
+				</div>
+			</li>
 		</ul>
 		<a href="./index.html" class="logo-container">
 			<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 190 42"><text transform="translate(95 31)" fill="#363636" font-size="35" font-family="BebasNeue, Bebas Neue"><tspan x="-94.518" y="0">CULTURAL</tspan><tspan y="0" fill="#fff">FITNESS</tspan></text></svg>
 		</a>
 	</header>
 	<main class="index">
+		<div class="dark-mode__container">
+			<span>Modo Oscuro</span>
+			<div class="dark-mode-button__container--class" id="dark-mode-button__container--id">
+				<object class="sun" data="./componentes/icons/sun.svg" type="image/svg+xml"></object>
+				<div class="circle"></div>
+				<object class="moon" data="./componentes/icons/moon.svg" type="image/svg+xml"></object>
+			</div>
+		</div>
 		<label for="check" class="label--blogs-page">
 			<h1>TE PRESENTAMOS LOS MEJORES <br> BLOGS SOBRE FITNESS</h1>
       <h2>SUPLEMENTACIÓN</h2>
@@ -86,5 +101,6 @@
 			<a href=""><span class="whatsapp icon"></span></a>
 		</div>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 </html>

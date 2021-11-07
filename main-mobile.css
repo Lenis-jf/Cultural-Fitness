@@ -61,23 +61,65 @@ ul.nav-menu {
 		        align-items: center;
 		width: 0;
 		height: auto;
-		position: relative;
+		position: absolute;
 		text-align: center;
 		background-color: rgba(73, 183, 242, 0.8);
 		left: 0;
-		top: 369.5px;
+		top: 80px;
 		-webkit-transition: all 0.5s;
 		transition: all 0.5s;
 		border-radius: 0 0 20px 0;
 }
 ul.nav-menu .last-child {
 		margin-bottom: 50px;
+		display: none;
+		width: auto;
+		height: auto;
 }
-ul.nav-menu li {
+ul.nav-menu .last-child span {
+		display: none;
+}
+ul.nav-menu .last-child object.sun {
+		margin-right: 13px;
+}
+ul.nav-menu .last-child object.moon {
+		margin-left: 13px;
+}
+ul.nav-menu .last-child div#dark-mode-button__container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		position: relative;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: space-evenly;
+		    -ms-flex-pack: space-evenly;
+		        justify-content: space-evenly;
+		background-color: #fdfdfc;
+		width: 80px;
+		height: 30px;
+		border: 2px solid #363636;
+		border-radius: 20px;
+		overflow: hidden;
+		cursor: pointer;
+}
+ul.nav-menu .last-child div#dark-mode-button__container div.circle {
+		position: absolute;
+		left: 0.5px;
+		width: 25px;
+		height: 24px;
+		border-radius: 50%;
+		background-color: #363636;
+		-webkit-box-shadow: 0px 0px 5px 0px #363636;
+		        box-shadow: 0px 0px 5px 0px #363636;
+}
+
+li {
 		display: none;
 		margin-top: 50px;
 }
-ul.nav-menu li a {
+li a {
 		text-decoration: none;
 		color: white;
 		font-size: 2rem;
@@ -91,7 +133,7 @@ ul.nav-menu li a {
 		background-position: 50% 100%;
 		background-repeat: no-repeat;
 }
-ul.nav-menu li a:hover {
+li a:hover {
 		color: #363636;
 		background-size: 100% 3px;
 }
@@ -135,16 +177,16 @@ div.line {
 		display: none;
 }
 
-#check:checked ~ label.menu-container div.menu div.medio {
+#check:checked ~ .menu-container div.menu div.medio {
 		opacity: 0;
 }
 
-#check:checked ~ label.menu-container div.menu div.arriba {
+#check:checked ~ .menu-container div.menu div.arriba {
 		-webkit-transform: rotateZ(45deg) translate(10px, -3px);
 		        transform: rotateZ(45deg) translate(10px, -3px);
 }
 
-#check:checked ~ label.menu-container div.menu div.abajo {
+#check:checked ~ .menu-container div.menu div.abajo {
 		-webkit-transform: rotateZ(-45deg) translate(15px, -2px);
 		        transform: rotateZ(-45deg) translate(15px, -2px);
 }
@@ -167,8 +209,12 @@ body::-webkit-scrollbar-thumb {
 		border-radius: 5px;
 }
 
-body {
-		color: #363636;
+body.home-body {
+		-webkit-transition: all 300ms;
+		transition: all 300ms;
+}
+body.home-body .dark-mode__container {
+		display: none;
 }
 
 main.index {
@@ -280,6 +326,42 @@ main.index button.home-button a.button-text {
 }
 main.index button.home-button div.right-arrow {
 		display: none;
+}
+
+body.darkmode {
+		background-color: #363636;
+		color: white;
+		-webkit-transition: all 300ms;
+		transition: all 300ms;
+}
+body.darkmode svg.icon {
+		fill: white;
+}
+body.darkmode svg path.right-arrow--path {
+		fill: #49b7f2;
+}
+body.darkmode button.home-button {
+		background-color: #49b7f2;
+}
+body.darkmode button.home-button a.button-text {
+		color: white;
+}
+body.darkmode button.home-button::before {
+		background-color: white;
+}
+body.darkmode .dark-mode__container div#dark-mode-button__container div.circle {
+		left: calc(100% - 24.5px);
+		background-color: white;
+}
+body.darkmode footer {
+		background-color: #49b7f2;
+		color: white;
+}
+body.darkmode footer div.footer-icons__container {
+		background-color: #49b7f2;
+}
+body.darkmode footer span.icon svg {
+		fill: white;
 }
 
 main.blog__main {
