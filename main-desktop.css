@@ -215,7 +215,7 @@ body::-webkit-scrollbar-thumb {
 body {
 		-webkit-transition: all 300ms;
 		transition: all 300ms;
-		background-color: #49b7f2;
+		background-color: #26a3e7;
 }
 body main {
 		padding: 60px 0 60px 0;
@@ -618,23 +618,23 @@ footer div.footer-icons__container a span.icon {
 }
 footer div.footer-icons__container a span.icon:hover {
 		opacity: 0.5;
-		-webkit-transform: scale(1.3);
-		        transform: scale(1.3);
+		-webkit-transform: scale(1.6);
+		        transform: scale(1.6);
 }
 footer div.footer-icons__container a span.instagram {
-		background-image: url("./componentes/icons/instagram.svg");
+		background-image: url("./componentes/icons/instagram-icon.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 }
 footer div.footer-icons__container a span.mail {
-		background-image: url("./componentes/icons/mail.svg");
+		background-image: url("./componentes/icons/mail-icon.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 }
 footer div.footer-icons__container a span.whatsapp {
-		background-image: url("./componentes/icons/whatsapp.svg");
+		background-image: url("./componentes/icons/whatsapp-icon.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
