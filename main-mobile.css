@@ -370,6 +370,9 @@ body.darkmode svg.icon {
 body.darkmode svg path.right-arrow--path {
 		fill: #49b7f2;
 }
+body.darkmode svg path.icon--path {
+		fill: white;
+}
 body.darkmode button.home-button {
 		background-color: #49b7f2;
 }
@@ -461,7 +464,7 @@ main section.blog-info div.titulo-blog span.titulo-negro {
 		text-shadow: none;
 }
 main section.blog-info p {
-		line-height: 1.8rem;
+		line-height: 1.7rem;
 }
 
 div.blog__image__container {
@@ -582,7 +585,7 @@ hr.section-separator {
 		border: none;
 		border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 		margin: 0 auto;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 }
 
 footer {
@@ -713,9 +716,7 @@ a.blog-representative__image--container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
+		width: auto;
 		height: auto;
 		margin-top: 20px;
 		padding: 0 10px 0 10px;
@@ -800,20 +801,16 @@ div.contact-icons__container--contact-page {
 }
 div.contact-icons__container--contact-page div.icon {
 		display: inline-block;
-		width: 50px;
-		height: 50px;
-		background-position: center;
-		background-size: contain;
-		background-repeat: no-repeat;
+		width: 55px;
+		height: 55px;
+		-webkit-transition: all 400ms;
+		transition: all 400ms;
+		cursor: pointer;
 }
-div.contact-icons__container--contact-page div.whatsapp {
-		background-image: url("./componentes/icons/whatsapp.svg");
-}
-div.contact-icons__container--contact-page div.mail {
-		background-image: url("./componentes/icons/mail.svg");
-}
-div.contact-icons__container--contact-page div.instagram {
-		background-image: url("./componentes/icons/instagram.svg");
+div.contact-icons__container--contact-page div.icon:hover {
+		-webkit-transform: scale(1.5);
+		        transform: scale(1.5);
+		opacity: 0.5;
 }
 
 div.dumbel {

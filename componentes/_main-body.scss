@@ -149,6 +149,9 @@ body.darkmode {
   svg path.right-arrow--path {
     fill: $color_header;
   }
+	svg path.icon--path {
+		fill: white;
+	}
   button.home-button {
     background-color: $color_header;
     a.button-text {

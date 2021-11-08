@@ -1,0 +1,18 @@
+a.blog-representative__image--container {
+  margin-top: 40px;
+  .blog-representative__image {
+    height: 350px;
+    max-width: 600px;
+  }
+}
+
+div.blogs-page__container {
+  div.paragraphs__container {
+    max-width: 600px;
+    a.read-more {
+      font-size: 1.6rem;
+      margin-top: 15px;
+      margin-left: calc(100% - 61px);
+    } 
+  }
+}

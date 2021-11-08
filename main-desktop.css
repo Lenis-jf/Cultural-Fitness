@@ -370,6 +370,9 @@ body.darkmode svg.icon {
 body.darkmode svg path.right-arrow--path {
 		fill: #49b7f2;
 }
+body.darkmode svg path.icon--path {
+		fill: white;
+}
 body.darkmode button.home-button {
 		background-color: #49b7f2;
 }
@@ -461,7 +464,7 @@ main section.blog-info div.titulo-blog span.titulo-negro {
 		text-shadow: none;
 }
 main section.blog-info p {
-		line-height: 1.8rem;
+		line-height: 1.7rem;
 }
 
 div.blog__image__container {
@@ -582,7 +585,7 @@ hr.section-separator {
 		border: none;
 		border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 		margin: 0 auto;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 }
 
 footer {
@@ -713,9 +716,7 @@ a.blog-representative__image--container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
+		width: auto;
 		height: auto;
 		margin-top: 20px;
 		padding: 0 10px 0 10px;
@@ -800,20 +801,16 @@ div.contact-icons__container--contact-page {
 }
 div.contact-icons__container--contact-page div.icon {
 		display: inline-block;
-		width: 50px;
-		height: 50px;
-		background-position: center;
-		background-size: contain;
-		background-repeat: no-repeat;
+		width: 55px;
+		height: 55px;
+		-webkit-transition: all 400ms;
+		transition: all 400ms;
+		cursor: pointer;
 }
-div.contact-icons__container--contact-page div.whatsapp {
-		background-image: url("./componentes/icons/whatsapp.svg");
-}
-div.contact-icons__container--contact-page div.mail {
-		background-image: url("./componentes/icons/mail.svg");
-}
-div.contact-icons__container--contact-page div.instagram {
-		background-image: url("./componentes/icons/instagram.svg");
+div.contact-icons__container--contact-page div.icon:hover {
+		-webkit-transform: scale(1.5);
+		        transform: scale(1.5);
+		opacity: 0.5;
 }
 
 div.dumbel {
@@ -938,7 +935,7 @@ main.index div.special-h1__container {
 		margin-top: 40px;
 }
 main.index div.special-h1__container h1 {
-		font-size: 4rem;
+		font-size: 3.7rem;
 }
 main.index h2 {
 		font-size: 1.8rem;
@@ -954,6 +951,10 @@ main.index div.paragraphs__container ul {
 main.index div.paragraphs__container p.paragraph {
 		font-size: 1.6rem;
 		line-height: 1.9rem;
+		text-align: justify;
+}
+main.index div.paragraphs__container p.especial {
+		text-align: center;
 }
 main.index button.home-button {
 		width: 235px;
@@ -1040,26 +1041,26 @@ body.darkmode button.home-button:hover a.button-text {
 }
 
 main section.blog-info {
-		font-size: 1.5rem;
-		max-width: 650px;
+		font-size: 1.6rem;
+		max-width: 700px;
 }
 main section.blog-info p {
 		line-height: 2rem;
 }
 
 div.blog__image__container {
-		max-width: 610px;
-		max-height: 500px;
+		max-width: 680px;
+		max-height: 520px;
 }
 
 main section.blog__info--title {
-		max-width: 650px;
+		max-width: 700px;
 }
 main section.blog__info--title article.blog__info--body {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 }
 main section.blog__info--title article.blog__info--body ul.benefits-list {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 }
 main section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button {
 		font-size: 1.4rem;
@@ -1070,12 +1071,13 @@ main section.blog__info--title article.blog__info--body h4 {
 		font-size: 2.3rem;
 }
 main section.blog__info--title article.blog__info--body P {
-		margin-bottom: 30px;
-		font-size: 1.5rem;
+		margin-bottom: 40px;
+		font-size: 1.6rem;
 }
 
 hr.section-separator {
-		max-width: 610px;
+		max-width: 680px;
+		margin-bottom: 20px;
 }
 
 footer .contact {
@@ -1136,4 +1138,21 @@ main.blog__main {
 
 main.contact {
 		height: calc(100vh - 100px);
+}
+
+a.blog-representative__image--container {
+		margin-top: 40px;
+}
+a.blog-representative__image--container .blog-representative__image {
+		height: 350px;
+		max-width: 600px;
+}
+
+div.blogs-page__container div.paragraphs__container {
+		max-width: 600px;
+}
+div.blogs-page__container div.paragraphs__container a.read-more {
+		font-size: 1.6rem;
+		margin-top: 15px;
+		margin-left: calc(100% - 61px);
 }

@@ -51,7 +51,7 @@ main.index {
     width: auto;
     margin-top: 40px;
     h1 {
-      font-size: 4rem;
+      font-size: 3.7rem;
     }
   }
   h2 {
@@ -67,6 +67,10 @@ main.index {
     p.paragraph {
       font-size: 1.6rem;
       line-height: 1.9rem;
+      text-align: justify;
+    }
+    p.especial {
+      text-align: center;
     }
   }
   button.home-button {
