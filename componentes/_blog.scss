@@ -9,7 +9,7 @@ main section.blog-info {
   height: 100%;
   min-width: 320px;
   max-width: 500px;
-  padding: 30px 18px 30px 18px;
+  padding: 0px 18px 40px 18px;
   margin: 0 auto;
   text-align: justify;
   font-family: $fuente_texto;
@@ -18,7 +18,7 @@ main section.blog-info {
   div.titulo-blog {
     width: 100%;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     span.titulo-azul {
       font-size: 3rem;
       color: $color_header;
@@ -50,7 +50,7 @@ div.blog__image__container {
   min-height: 180px;
   max-height: 400px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   img {
     width: 100%;
     height: 100%;
@@ -69,7 +69,7 @@ h3.titulo-info {
 }
 
 main section.blog__info--title {
-  padding: 0px 18px 30px 18px;
+  padding: 0px 18px 40px 18px;
   color: $color_footer;
   text-align: justify;
   width: 100%;
@@ -77,7 +77,7 @@ main section.blog__info--title {
   max-width: 500px;
   margin: 0 auto;
 	article.blog__info--body--last {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
   article.blog__info--body {
     color: $color_footer;
@@ -109,8 +109,8 @@ main section.blog__info--title {
 				font-size: 1.2rem;
 				font-family: $fuente_titulos;
 				font-weight: 300;
-				width: 140px;
-				height: 25px;
+				width: 175px;
+				height: 30px;
 				border-radius: 30px;
 				border: 1.5px solid $color_header;
 				background-color: white;

@@ -386,6 +386,9 @@ body.darkmode section.blog__info--title article.blog__info--body p {
 body.darkmode section.blog__info--title article.blog__info--body h4 {
 		color: white;
 }
+body.darkmode section.blog__info--title article.blog__info--body ul.benefits-list {
+		color: white;
+}
 body.darkmode section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button {
 		color: white;
 		background-color: #49b7f2;
@@ -393,6 +396,9 @@ body.darkmode section.blog__info--title article.blog__info--body div.recommended
 body.darkmode section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button:hover {
 		color: #49b7f2;
 		background-color: white;
+}
+body.darkmode hr.section-separator {
+		border-bottom: 1px solid rgba(73, 183, 242, 0.3);
 }
 
 main.blog__main {
@@ -406,7 +412,7 @@ main section.blog-info {
 		height: 100%;
 		min-width: 320px;
 		max-width: 500px;
-		padding: 30px 18px 30px 18px;
+		padding: 0px 18px 40px 18px;
 		margin: 0 auto;
 		text-align: justify;
 		font-family: "Roboto", sans-serif;
@@ -416,7 +422,7 @@ main section.blog-info {
 main section.blog-info div.titulo-blog {
 		width: 100%;
 		text-align: center;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 }
 main section.blog-info div.titulo-blog span.titulo-azul {
 		font-size: 3rem;
@@ -447,7 +453,7 @@ div.blog__image__container {
 		min-height: 180px;
 		max-height: 400px;
 		margin: 0 auto;
-		padding-bottom: 20px;
+		padding-bottom: 40px;
 }
 div.blog__image__container img {
 		width: 100%;
@@ -466,7 +472,7 @@ h3.titulo-info {
 }
 
 main section.blog__info--title {
-		padding: 0px 18px 30px 18px;
+		padding: 0px 18px 40px 18px;
 		color: #363636;
 		text-align: justify;
 		width: 100%;
@@ -475,7 +481,7 @@ main section.blog__info--title {
 		margin: 0 auto;
 }
 main section.blog__info--title article.blog__info--body--last {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 }
 main section.blog__info--title article.blog__info--body {
 		color: #363636;
@@ -519,8 +525,8 @@ main section.blog__info--title article.blog__info--body div.recommended-button__
 		font-size: 1.2rem;
 		font-family: "Bebas Neue", cursive;
 		font-weight: 300;
-		width: 140px;
-		height: 25px;
+		width: 175px;
+		height: 30px;
 		border-radius: 30px;
 		border: 1.5px solid #49b7f2;
 		background-color: white;

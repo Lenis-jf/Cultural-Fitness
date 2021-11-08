@@ -171,6 +171,9 @@ body.darkmode {
 			h4 {
 				color: white;
 			}
+			ul.benefits-list {
+				color: white;
+			}
 			div.recommended-button__container {
 				a.recommended-button {
 					color: white;
@@ -182,5 +185,8 @@ body.darkmode {
 				}
 			}
 		}
+	}
+	hr.section-separator {
+		border-bottom: 1px solid rgba($color: $color_header, $alpha: 0.3);
 	}
 }
