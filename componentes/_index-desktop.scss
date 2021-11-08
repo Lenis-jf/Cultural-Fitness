@@ -47,6 +47,28 @@ body {
 }
 
 main.index {
+  div.special-h1__container {
+    width: auto;
+    margin-top: 40px;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  div.paragraphs__container {
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    ul {
+      font-size: 1.6rem;
+    }
+    p.paragraph {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
+  }
   button.home-button {
     width: 235px;
     position: relative;
