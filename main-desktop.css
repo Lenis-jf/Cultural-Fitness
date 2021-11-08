@@ -704,7 +704,7 @@ a.blog-representative__image--container .blog-representative__image {
 		border-radius: 8px;
 }
 
-label.label--blogs-page {
+div.blogs-page__container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
