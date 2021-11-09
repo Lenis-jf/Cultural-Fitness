@@ -116,6 +116,8 @@ ul.nav-menu .last-child div#dark-mode-button__container div.circle {
 		background-color: #363636;
 		-webkit-box-shadow: 0px 0px 5px 0px #363636;
 		        box-shadow: 0px 0px 5px 0px #363636;
+		-webkit-transition: all 400ms;
+		transition: all 400ms;
 }
 
 li {
@@ -213,15 +215,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
 		background-color: #26a3e7;
 }
 body main {
 		padding: 60px 0 60px 0;
 		background-color: white;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
+		-webkit-transition: all 400ms;
+		transition: all 400ms;
 }
 body .dark-mode__container {
 		display: none;
@@ -231,14 +231,10 @@ main.index {
 		width: 100%;
 		min-width: 320px;
 		height: 100%;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
 }
 main.index div.special-h1__container {
 		width: 200px;
 		margin: 0 auto;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
 }
 main.index h1 {
 		font-family: "Bebas Neue", cursive;
@@ -272,8 +268,11 @@ main.index div.home-icon__container {
 		margin-top: 30px;
 		width: 68px;
 		height: 68px;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
+}
+main.index div.home-icon__container svg.icon {
+		width: 200px;
+		-webkit-transition: fill 400ms;
+		transition: fill 400ms;
 }
 main.index div.paragraphs__container {
 		width: 100%;
@@ -284,8 +283,6 @@ main.index div.paragraphs__container {
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
 }
 main.index div.paragraphs__container p.paragraph {
 		font-family: "Roboto", sans-serif;
@@ -306,8 +303,6 @@ main.index div.paragraphs__container ul {
 		line-height: 1.523rem;
 		text-align: center;
 		list-style: none;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
 }
 main.index div.paragraphs__container ul li {
 		display: block;
@@ -321,6 +316,8 @@ main.index div.paragraphs__container ul li::before {
 		background-color: #363636;
 		border-radius: 50%;
 		margin: 0 8px 2px 0;
+		-webkit-transition: all 400ms;
+		transition: all 400ms;
 }
 main.index button.home-button {
 		display: -webkit-box;
@@ -339,8 +336,6 @@ main.index button.home-button {
 		margin-bottom: 90px;
 		border: 1.5px solid #49b7f2;
 		border-radius: 15px;
-		-webkit-transition: all 300ms;
-		transition: all 300ms;
 		background: white;
 }
 main.index button.home-button a.button-text {
@@ -350,9 +345,13 @@ main.index button.home-button a.button-text {
 		font-size: 1.5rem;
 		text-decoration: none;
 		text-align: center;
+		-webkit-transition: all 400ms;
+		transition: all 400ms;
 }
 main.index button.home-button div.right-arrow {
 		display: none;
+		-webkit-transition: all 350ms;
+		transition: all 350ms;
 }
 
 body.darkmode {
@@ -634,13 +633,13 @@ footer div.footer-icons__container a {
 		display: inline-block;
 		width: auto;
 		height: auto;
-		padding: 10px;
+		padding: 10px 15px 10px 15px;
 		cursor: pointer;
 }
 footer div.footer-icons__container a span.icon {
 		display: inline-block;
-		width: 22px;
-		height: 22px;
+		width: 40px;
+		height: 30px;
 		-webkit-transition: all 300ms;
 		transition: all 300ms;
 }
@@ -774,10 +773,6 @@ a.read-more:hover {
 		background-size: 100% 2px;
 }
 
-footer.footer--contact-page {
-		display: none;
-}
-
 main.contact {
 		height: calc(100vh - 80px);
 }
@@ -796,8 +791,6 @@ div.contact-icons__container--contact-page {
 		max-width: 300px;
 		height: 100px;
 		margin: 0 auto;
-		margin-top: 30px;
-		margin-bottom: 30px;
 }
 div.contact-icons__container--contact-page div.icon {
 		display: inline-block;
@@ -817,6 +810,5 @@ div.dumbel {
 		width: 100px;
 		height: 100px;
 		margin: 0 auto;
-		margin-top: 80px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 }

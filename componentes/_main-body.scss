@@ -9,12 +9,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-	transition: all 300ms;
 	background-color: #26a3e7;
 	main {
 		padding: 60px 0 60px 0;
 		background-color: white;
-		transition: all 300ms;
+		transition: all 400ms;
 	}
 	.dark-mode__container {
 		display: none;
@@ -25,11 +24,9 @@ main.index {
 width: 100%;
 min-width: 320px;
 height: 100%;
-transition: all 300ms;
 div.special-h1__container {
 	width: 200px;
 	margin: 0 auto;
-	transition: all 300ms;
 }
 h1 {
 	font-family: $fuente_titulos;
@@ -57,7 +54,10 @@ div.home-icon__container {
 	margin-top: 30px;
 	width: 68px;
 	height: 68px;
-	transition: all 300ms;
+	svg.icon {
+		width: 200px;
+		transition: fill 400ms;
+	}
 }
 div.paragraphs__container {
 	width: 100%;
@@ -66,7 +66,6 @@ div.paragraphs__container {
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	transition: all 300ms;
 	p.paragraph {
 		font-family: $fuente_texto;
 		font-size: 1.3rem;
@@ -86,7 +85,6 @@ div.paragraphs__container {
 		line-height: 1.523rem;
 		text-align: center;
 		list-style: none;
-		transition: all 300ms;
 		li {
 			display: block;
 			margin-top: 5px;
@@ -99,6 +97,7 @@ div.paragraphs__container {
 			background-color: $color_footer;
 			border-radius: 50%;
 			margin: 0 8px 2px 0;
+			transition: all 400ms;
 		} 
 	}
 }
@@ -113,7 +112,6 @@ button.home-button {
 	margin-bottom: 90px;
 	border: 1.5px solid $color_header;
 	border-radius: 15px;
-	transition: all 300ms;
 	background: white;
 	a.button-text {
 		color: $color_header;
@@ -122,9 +120,11 @@ button.home-button {
 		font-size: 1.5rem;
 		text-decoration: none;
 		text-align: center;
+		transition: all 400ms;
 	}
 	div.right-arrow {
 		display: none;
+		transition: all 350ms;
 	}
 }
 }

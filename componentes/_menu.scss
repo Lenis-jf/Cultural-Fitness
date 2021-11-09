@@ -45,6 +45,7 @@ ul.nav-menu {
         border-radius: 50%;
         background-color: $color_footer;
         box-shadow: 0px 0px 5px 0px $color_footer;
+        transition: all 400ms;
       }
     }
   }
