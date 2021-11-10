@@ -30,7 +30,7 @@ div.questions-container {
     height: 50px;
     border: 1px solid $color_footer;
     border-radius: 10px;
-    transition: all 400ms ease-in-out;
+    transition: all 300ms ease-in-out;
     overflow: hidden;
     flex-wrap: wrap;
     p.question-visible {
@@ -42,7 +42,7 @@ div.questions-container {
       width: inherit;
       max-width: inherit;
       height: fit-content;
-      transition: all 400ms ease-in-out;
+      transition: all 300ms ease-in-out;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -50,7 +50,7 @@ div.questions-container {
         margin-right: 10px;
         cursor: pointer;
         transform-origin: center;
-        transition: all 400ms ease-in-out;
+        transition: all 300ms ease-in-out;
       }
     }
     p.question {
@@ -60,30 +60,34 @@ div.questions-container {
       font-family: $fuente_texto;
       font-weight: 400;
       display: none;
+      opacity: 0;
     }
     hr.question-separator {
       display: none;
+      opacity: 0;
     }
   }
-  input:checked ~ label.question-box {
+  input:checked + label.question-box {
     height: 150px;
     align-items: flex-start;
   }
-  input:checked ~ label.question-box p {
+  input:checked + label.question-box p {
     margin-top: 10px;
   }
-  input:checked ~ label.question-box p.question {
+  input:checked + label.question-box p.question {
     display: block;
     margin-top: 0;
+    opacity: 1;
   }
-  input:checked ~ label.question-box hr.question-separator {
+  input:checked + label.question-box hr.question-separator {
     width: 90%;
     height: 1px;
     background-color: $color_footer;
     margin: 0 auto;
     display: block;
+    opacity: 1;
   }
-  input:checked ~ label.arrow p svg {
+  input:checked + label.question-box p svg {
     transform: rotate(90deg);
   }
 }
