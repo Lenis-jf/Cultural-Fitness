@@ -1,11 +1,10 @@
 body::-webkit-scrollbar {
   width: 10px;
-	background-color: $color_footer;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: $color_header;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 body {

@@ -12,7 +12,8 @@ html {
 }
 
 header {
-		position: relative;
+		position: sticky;
+		top: 0;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -23,6 +24,7 @@ header {
 		min-width: 320px;
 		height: 80px;
 		background-color: #49b7f2;
+		z-index: 3;
 }
 header .menu-container {
 		position: absolute;
@@ -38,8 +40,7 @@ header .menu-container {
 }
 header .logo-container {
 		position: absolute;
-		right: 0;
-		margin-right: calc(50% - 110px);
+		right: calc(50% - 110px);
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
@@ -49,6 +50,9 @@ header .logo-container {
 }
 header .logo-container svg {
 		cursor: pointer;
+}
+header div.nav-menu--desktop__container {
+		display: none;
 }
 
 ul.nav-menu {
@@ -206,12 +210,11 @@ div.line {
 
 body::-webkit-scrollbar {
 		width: 10px;
-		background-color: #363636;
 }
 
 body::-webkit-scrollbar-thumb {
 		background-color: #49b7f2;
-		border-radius: 5px;
+		border-radius: 10px;
 }
 
 body {

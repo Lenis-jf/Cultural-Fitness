@@ -1,21 +1,7 @@
-a {
-  font-size: 2.5rem;
-}
-
-#check:checked ~ .nav-menu {
-  width: 40%;
-}
-
-ul.nav-menu {
-  top: 100px;
-  li.last-child {
-    display: none;
-  }
-  li.calculadora {
-    margin-bottom: 50px;
-  }
-}
-
 #check:checked ~ .nav-menu li.last-child{
+  display: none;
+}
+
+label.menu-container {
   display: none;
 }

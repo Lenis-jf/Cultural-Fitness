@@ -4,8 +4,8 @@ body {
     width: auto;
     height: auto;
     position: absolute;
-    top: calc(50px - 15px);
-    right: 100px;
+    top: calc(40px - 15px);
+    left: 80px;
     span {
       display: flex;
       align-items: center;
@@ -47,6 +47,7 @@ body {
 }
 
 main.index {
+  padding-top: 150px;
   div.special-h1__container {
     width: auto;
     margin-top: 40px;
