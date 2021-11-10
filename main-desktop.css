@@ -816,6 +816,103 @@ div.dumbel {
 		margin-bottom: 20px;
 }
 
+main.index h2.faq {
+		margin-top: 40px;
+}
+
+object.chat-circle {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+}
+
+div.questions-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin: 0 auto;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		width: 100%;
+		max-width: 300px;
+		height: auto;
+		margin-top: 40px;
+		margin-bottom: 30px;
+}
+div.questions-container input {
+		display: none;
+}
+div.questions-container label.question-box {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		margin-bottom: 15px;
+		width: 100%;
+		height: 50px;
+		border: 1px solid #363636;
+		border-radius: 10px;
+		-webkit-transition: all 400ms ease-in-out;
+		transition: all 400ms ease-in-out;
+		overflow: hidden;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+}
+div.questions-container label.question-box p.question-visible {
+		color: #363636;
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		font-size: 1.3rem;
+		margin-left: 10px;
+		width: inherit;
+		max-width: inherit;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		-webkit-transition: all 400ms ease-in-out;
+		transition: all 400ms ease-in-out;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+div.questions-container label.question-box p.question-visible svg {
+		margin-right: 10px;
+		cursor: pointer;
+		-webkit-transform-origin: center;
+		        transform-origin: center;
+}
+div.questions-container label.question-box p.question {
+		margin-top: 30px;
+		display: none;
+}
+div.questions-container input:checked ~ label.question-box {
+		height: 200px;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+}
+div.questions-container input:checked ~ label.question-box p {
+		margin-top: 10px;
+}
+div.questions-container input:checked ~ label.question-box p.question {
+		margin-top: 10px;
+		display: block;
+}
+div.questions-container input:checked ~ label.arrow p svg {
+		-webkit-transform: rotate(90deg);
+		        transform: rotate(90deg);
+}
+
 * {
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
