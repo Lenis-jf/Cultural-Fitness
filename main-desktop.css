@@ -820,8 +820,8 @@ main.index h2.faq {
 		margin-top: 40px;
 }
 
-object.chat-circle {
-		display: block;
+div.chat-circle {
+		display: table;
 		margin: 0 auto;
 		margin-bottom: 30px;
 }
@@ -931,6 +931,16 @@ div.questions-container input:checked + label.question-box hr.question-separator
 div.questions-container input:checked + label.question-box p svg {
 		-webkit-transform: rotate(90deg);
 		        transform: rotate(90deg);
+}
+
+body.darkmode main.index svg path.circle-chat-path {
+		stroke: white;
+}
+body.darkmode div.questions-container label.question-box {
+		border-color: white;
+}
+body.darkmode div.questions-container label.question-box p.question, body.darkmode div.questions-container label.question-box p.question-visible {
+		color: white;
 }
 
 * {

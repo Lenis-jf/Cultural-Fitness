@@ -4,8 +4,8 @@ main.index {
   }
 }
 
-object.chat-circle {
-  display: block;
+div.chat-circle {
+  display: table;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -89,5 +89,23 @@ div.questions-container {
   }
   input:checked + label.question-box p svg {
     transform: rotate(90deg);
+  }
+}
+
+body.darkmode {
+  main.index {
+    svg {
+      path.circle-chat-path {
+        stroke: white;
+      }
+    }
+  }
+  div.questions-container {
+    label.question-box {
+      border-color: white;
+      p.question, p.question-visible {
+        color: white;
+      }
+    }
   }
 }
