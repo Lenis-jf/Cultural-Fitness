@@ -1,6 +1,7 @@
 main.index {
   h2.faq {
     margin-top: 40px;
+    font-size: 2.2rem;
   }
 }
 
@@ -24,6 +25,8 @@ div.questions-container {
   }
   label.question-box {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-bottom: 15px;
     width: 100%;
@@ -33,6 +36,7 @@ div.questions-container {
     transition: all 300ms ease-in-out;
     overflow: hidden;
     flex-wrap: wrap;
+    cursor: pointer;
     p.question-visible {
       color: $color_footer;
       font-family: $fuente_texto;
@@ -46,15 +50,16 @@ div.questions-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 10px 0 10px 0;
       svg {
-        margin-right: 10px;
+        margin-right: 20px;
         cursor: pointer;
         transform-origin: center;
         transition: all 300ms ease-in-out;
       }
     }
     p.question {
-      margin-top: 10px;
+      margin-top: 20px;
       padding: 0 10px 10px 10px;
       text-align: justify;
       font-family: $fuente_texto;
@@ -69,19 +74,19 @@ div.questions-container {
     height: 150px;
     align-items: flex-start;
   }
-  input:checked + label.question-box p.question-visible {
-    margin-top: 10px;
-  }
   input:checked + label.question-box p.question {
     display: block;
   }
   input:checked + label.question-box hr.question-separator {
-    width: 90%;
+    width: 100%;
     height: 0.5px;
     background-color: $color_footer;
     margin: 0 auto;
-    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: inline-block;
     background-color: $color_footer;
+    max-width: 280px;
   }
   input:checked + label.question-box p svg {
     transform: rotate(90deg);

@@ -18,7 +18,8 @@ div.questions-container {
       font-size: 1.8rem;
     }
     p.question {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
+      padding: 0 20px 10px 20px;
     }
   }
   input:checked + label.question-box {
@@ -26,6 +27,9 @@ div.questions-container {
   }
   input:checked + label.question-box hr.question-separator {
     width: 100%;
-    max-width: 590px;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }

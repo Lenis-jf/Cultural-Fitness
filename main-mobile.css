@@ -442,6 +442,7 @@ main section.blog-info {
 		font-family: "Roboto", sans-serif;
 		font-size: 1.2rem;
 		color: #363636;
+		margin-top: 50px;
 }
 main section.blog-info div.titulo-blog {
 		width: 100%;
@@ -818,6 +819,7 @@ div.dumbel {
 
 main.index h2.faq {
 		margin-top: 40px;
+		font-size: 2.2rem;
 }
 
 div.chat-circle {
@@ -848,6 +850,13 @@ div.questions-container label.question-box {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
@@ -861,6 +870,7 @@ div.questions-container label.question-box {
 		overflow: hidden;
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
+		cursor: pointer;
 }
 div.questions-container label.question-box p.question-visible {
 		color: #363636;
@@ -884,9 +894,10 @@ div.questions-container label.question-box p.question-visible {
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
+		padding: 10px 0 10px 0;
 }
 div.questions-container label.question-box p.question-visible svg {
-		margin-right: 10px;
+		margin-right: 20px;
 		cursor: pointer;
 		-webkit-transform-origin: center;
 		        transform-origin: center;
@@ -894,7 +905,7 @@ div.questions-container label.question-box p.question-visible svg {
 		transition: all 300ms ease-in-out;
 }
 div.questions-container label.question-box p.question {
-		margin-top: 10px;
+		margin-top: 20px;
 		padding: 0 10px 10px 10px;
 		text-align: justify;
 		font-family: "Roboto", sans-serif;
@@ -910,19 +921,19 @@ div.questions-container input:checked + label.question-box {
 		    -ms-flex-align: start;
 		        align-items: flex-start;
 }
-div.questions-container input:checked + label.question-box p.question-visible {
-		margin-top: 10px;
-}
 div.questions-container input:checked + label.question-box p.question {
 		display: block;
 }
 div.questions-container input:checked + label.question-box hr.question-separator {
-		width: 90%;
+		width: 100%;
 		height: 0.5px;
 		background-color: #363636;
 		margin: 0 auto;
-		display: block;
+		margin-right: 10px;
+		margin-left: 10px;
+		display: inline-block;
 		background-color: #363636;
+		max-width: 280px;
 }
 div.questions-container input:checked + label.question-box p svg {
 		-webkit-transform: rotate(90deg);
