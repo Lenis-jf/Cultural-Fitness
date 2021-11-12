@@ -894,17 +894,15 @@ div.questions-container label.question-box p.question-visible svg {
 		transition: all 300ms ease-in-out;
 }
 div.questions-container label.question-box p.question {
-		margin-top: 30px;
-		padding: 10px 10px 10px 10px;
+		margin-top: 10px;
+		padding: 0 10px 10px 10px;
 		text-align: justify;
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
 		display: none;
-		opacity: 0;
 }
 div.questions-container label.question-box hr.question-separator {
 		display: none;
-		opacity: 0;
 }
 div.questions-container input:checked + label.question-box {
 		height: 150px;
@@ -912,21 +910,19 @@ div.questions-container input:checked + label.question-box {
 		    -ms-flex-align: start;
 		        align-items: flex-start;
 }
-div.questions-container input:checked + label.question-box p {
+div.questions-container input:checked + label.question-box p.question-visible {
 		margin-top: 10px;
 }
 div.questions-container input:checked + label.question-box p.question {
 		display: block;
-		margin-top: 0;
-		opacity: 1;
 }
 div.questions-container input:checked + label.question-box hr.question-separator {
 		width: 90%;
-		height: 1px;
+		height: 0.5px;
 		background-color: #363636;
 		margin: 0 auto;
 		display: block;
-		opacity: 1;
+		background-color: #363636;
 }
 div.questions-container input:checked + label.question-box p svg {
 		-webkit-transform: rotate(90deg);
@@ -941,4 +937,8 @@ body.darkmode div.questions-container label.question-box {
 }
 body.darkmode div.questions-container label.question-box p.question, body.darkmode div.questions-container label.question-box p.question-visible {
 		color: white;
+}
+body.darkmode div.questions-container label.question-box hr.question-separator {
+		border-color: white;
+		background-color: white;
 }

@@ -1,0 +1,31 @@
+div.questions-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  input {
+    display: none;
+  }
+  label.question-box {
+    margin-bottom: 25px;
+    height: 80px;
+    border-radius: 10px;
+    p.question-visible {
+      font-size: 1.8rem;
+    }
+    p.question {
+      font-size: 1.7rem;
+    }
+  }
+  input:checked + label.question-box {
+    height: 200px;
+  }
+  input:checked + label.question-box hr.question-separator {
+    width: 100%;
+    max-width: 590px;
+  }
+}
