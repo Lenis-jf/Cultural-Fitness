@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cultural Fitness</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./main-mobile.css">
+	<link rel="stylesheet" href="./main-desktop.css" media="screen and (min-width: 900px)">
+</head>
+<body class="home-body">
+<header class="header">
+	<input type="checkbox" id="check">
+	<label for="check" class="menu-container">
+		<div class="menu">
+			<div class="line arriba"></div>
+			<div class="line medio"></div>
+			<div class="line abajo"></div> 
+		</div>
+	</label>
+	<ul class="nav-menu">
+		<li><a href="./index.html" class="active">HOME</a></li>
+		<li><a href="./blogs-page.html">BLOGS</a></li>
+		<li><a href="./contacto.html">RECOMENDADOS</a></li>
+		<li><a href="./recomendados.html">CALCULADORA</a></li>
+		<li><a href="./faq.html">PREGUNTAS</a></li>
+		<li class="calculadora"><a href="./calculadora.html">CONTACTO</a></li>
+		<li class="last-child dark-mode__container">
+			<div id="dark-mode-button__container">
+				<object class="sun" data="./componentes/icons/sun.svg" type="image/svg+xml"></object>
+				<div class="circle"></div>
+				<object class="moon" data="./componentes/icons/moon.svg" type="image/svg+xml"></object>
+			</div>
+		</li>
+	</ul>
+	<a href="./index.html" class="logo-container">
+		<object data="./componentes/imgs/CULTURAL-FITNESS.svg" type="image/svg+xml"></object>
+	</a>
+	<div class="dark-mode__container">
+		<span>Modo Oscuro</span>
+		<div class="dark-mode-button__container--class" id="dark-mode-button__container--id">
+			<object class="sun" data="./componentes/icons/sun.svg" type="image/svg+xml"></object>
+			<div class="circle"></div>
+			<object class="moon" data="./componentes/icons/moon.svg" type="image/svg+xml"></object>
+		</div>
+	</div>
+	<div class="nav-menu--desktop__container">
+		<a href="./index.html" class="nav-menu--desktop__item">
+			HOME
+		</a>
+		<a href="./blogs-page.html" class="nav-menu--desktop__item">
+			BLOGS
+		</a>
+		<a href="./recomendados.html" class="nav-menu--desktop__item">
+			RECOMENDADOS
+		</a>
+		<a href="./calculadora.html" class="nav-menu--desktop__item">
+			CALCULADORA
+		</a>
+		<a href="./faq.html" class="nav-menu--desktop__item">
+			PREGUNTAS
+		</a>
+		<a href="./contacto.html" class="nav-menu--desktop__item">
+			CONTACTO
+		</a>
+	</div>
+</header>
+<main class="index main--calculator">
+	<div>
+    <svg class="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="black" width="100" height="100"><path d="m6 3v26h20v-26zm2 2h16v22h-16zm2 2v6h12v-6zm2 2h8v2h-8zm-1 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"/></svg>
+  </div>
+  <h1>TU NUEVO LUGAR FAVORITO</h1>
+  <h2>CALCÚLA TODO LO QUE NECESITAS SABER AQUÍ</h2>
+  <h3>Calcular calorías que quema tu cuerpo naturalmente al día</h3>
+  <br>
+  <h3>(Tasa metabólica basal)</h3>
+  <label for="calculator-question__input" class="calculator-question__container">
+    <p class="paragraph">¿Cuanto pesas?</p>
+  </label>
+  <input type="number" id="calculator-question__input">
+  <label for="calculator-question__input" class="calculator-question__container">
+    <p class="paragraph">¿Cuanto mides?</p>
+  </label>
+  <input type="number" id="calculator-question__input">
+  <label for="calculator-question__input" class="calculator-question__container">
+    <p class="paragraph">¿Cuantos años tienes?</p>
+  </label>
+  <input type="number" id="calculator-question__input">
+  <p id="calculator-answer"></p>
+  <h3>Cuantas calorías consumir para adelgazar</h3>
+  <br>
+  <h3>(Debes usar el valor que obtuviste arriba, Osea tu TMB o Tasa Metabólica Basal)</h3>
+  <label for="calculator-question__input" class="calculator-question__container">
+    <p class="paragraph">¿Cual es tu TMB?</p>
+  </label>
+  <input type="number" id="calculator-question__input">
+  <label for="calculator-question__input" class="calculator-question__container">
+    <p class="paragraph">¿Cuanto ejercicio haces?</p>
+  </label>
+  <input type="number" id="calculator-question__input">
+  <p id="calculator-answer"></p>
+  <h3>Cuantas calorías consumir para aumentar de peso</h3>
+  <br>
+  <h3>(Debes usar el valor que obtiviste arriba, Osea tu TMB o Tasa Metabólica Basal)</h3>
+  <label for="calculator-question__input" class="calculator-question__container">
+    <p class="paragraph">¿Cual es tu TMB?</p>
+  </label>
+  <input type="number" id="calculator-question__input">
+  <label for="calculator-question__input" class="calculator-question__container">
+    <p class="paragraph">¿Cuanto ejercicio haces?</p>
+  </label>
+  <input type="number" id="calculator-question__input">
+  <p id="calculator-answer"></p>
+</main>
+<footer>
+	<span class="contact">Contáctanos</span>
+	<div class="footer-icons__container">
+		<a href=""><span class="instagram icon"></span></a>
+		<a href="mailto:culturalfitnessweb@gmail.com"><span class="mail icon"></span></a>
+		<a href=""><span class="whatsapp icon"></span></a>
+	</div>
+</footer>
+<script src="./js/main.js"></script>
+</body>
+</html>
