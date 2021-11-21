@@ -2,6 +2,7 @@ main.blog__main {
   width: 100%;
   min-width: 320px;
   height: 100%;
+  padding-top: 20px;
 }
 
 main section.blog-info {
@@ -9,13 +10,13 @@ main section.blog-info {
   height: 100%;
   min-width: 320px;
   max-width: 500px;
-  padding: 0px 18px 40px 18px;
+  padding: 0px 18px 30px 18px;
   margin: 0 auto;
   text-align: justify;
   font-family: $fuente_texto;
   font-size: 1.2rem;
   color: $color_footer;
-  margin-top: 50px;
+  margin-top: 20px;
   div.titulo-blog {
     width: 100%;
     text-align: center;

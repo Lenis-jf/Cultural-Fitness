@@ -429,6 +429,7 @@ main.blog__main {
 		width: 100%;
 		min-width: 320px;
 		height: 100%;
+		padding-top: 20px;
 }
 
 main section.blog-info {
@@ -436,13 +437,13 @@ main section.blog-info {
 		height: 100%;
 		min-width: 320px;
 		max-width: 500px;
-		padding: 0px 18px 40px 18px;
+		padding: 0px 18px 30px 18px;
 		margin: 0 auto;
 		text-align: justify;
 		font-family: "Roboto", sans-serif;
 		font-size: 1.2rem;
 		color: #363636;
-		margin-top: 50px;
+		margin-top: 20px;
 }
 main section.blog-info div.titulo-blog {
 		width: 100%;
@@ -819,7 +820,7 @@ div.dumbel {
 
 main.index h2.faq {
 		margin-top: 40px;
-		font-size: 2.2rem;
+		font-size: 2rem;
 }
 
 div.chat-circle {
@@ -905,14 +906,11 @@ div.questions-container label.question-box p.question-visible svg {
 		transition: all 300ms ease-in-out;
 }
 div.questions-container label.question-box p.question {
-		margin-top: 20px;
-		padding: 0 10px 10px 10px;
+		margin-top: 10px;
+		padding: 0 10px 0 10px;
 		text-align: justify;
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
-		display: none;
-}
-div.questions-container label.question-box hr.question-separator {
 		display: none;
 }
 div.questions-container input:checked + label.question-box {
@@ -923,17 +921,6 @@ div.questions-container input:checked + label.question-box {
 }
 div.questions-container input:checked + label.question-box p.question {
 		display: block;
-}
-div.questions-container input:checked + label.question-box hr.question-separator {
-		width: 100%;
-		height: 0.5px;
-		background-color: #363636;
-		margin: 0 auto;
-		margin-right: 10px;
-		margin-left: 10px;
-		display: inline-block;
-		background-color: #363636;
-		max-width: 280px;
 }
 div.questions-container input:checked + label.question-box p svg {
 		-webkit-transform: rotate(90deg);
@@ -949,7 +936,87 @@ body.darkmode div.questions-container label.question-box {
 body.darkmode div.questions-container label.question-box p.question, body.darkmode div.questions-container label.question-box p.question-visible {
 		color: white;
 }
-body.darkmode div.questions-container label.question-box hr.question-separator {
-		border-color: white;
-		background-color: white;
+
+main.main--calculator {
+		padding-left: 10px;
+		padding-right: 10px;
+}
+main.main--calculator div.home-icon__container {
+		margin-top: 0px;
+}
+main.main--calculator div.titulos-principales {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-ms-flex-line-pack: center;
+		    align-content: center;
+		margin-bottom: 50px;
+		margin-top: 20px;
+}
+main.main--calculator div.all-inputs__container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+main.main--calculator div.all-inputs__container div.calculation__container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+main.main--calculator div.all-inputs__container div.calculation__container label {
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		font-size: 1.3rem;
+}
+main.main--calculator div.all-inputs__container div.calculation__container label p.paragraph {
+		color: #363636;
+		margin-top: 15px;
+}
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		margin-top: 30px;
+		margin-bottom: 50px;
+}
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation input {
+		font-family: "Roboto", sans-serif;
+		font-size: 1.1rem;
+		font-weight: 300;
+		color: #c6c6c6;
+		padding: 10px;
+		outline: none;
+		width: 250px;
+		height: 35px;
+		border-radius: 7px;
+		margin-top: 8px;
+		border: solid 0.5px #363636;
 }
