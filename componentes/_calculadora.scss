@@ -46,7 +46,10 @@ main.main--calculator {
           height: 35px;
           border-radius: 7px;
           margin-top: 8px;
-          border: solid 0.5px $color_footer;
+          border: solid 2px #9c9c9c;
+        }
+        input:focus {
+          border: solid 2px $color_header;
         }
       }
     }
