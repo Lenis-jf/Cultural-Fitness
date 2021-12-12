@@ -63,7 +63,7 @@ function calcularTmb() {
 
   let tmbValue = (10 * weightValue) + (6.25 * heightValue) - (5 * ageValue) + plusValue;
 
-  document.getElementById("calculator-answer").innerHTML = "Tu tasa metabolica basal es de: " + tmbValue + "Cal";
+  document.getElementById("calculator-answer").innerHTML = "Tu tasa metabólica basal es de: " + tmbValue + " Cal";
 }
 
 // HOMBRES   TMB= (10 x peso de Kg) + (6,25 x altura en cm) – (5 x edad en años) +  5
