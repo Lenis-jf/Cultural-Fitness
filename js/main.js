@@ -7,11 +7,11 @@ var age = document.getElementById("age");
 var tmb = document.getElementById("tmb");
 var exercise = document.getElementById("exercise");
 const calculate = document.getElementById("calculate")
+var plusValue;
 
 load();
 
 main.addEventListener("click", darClick);
-calculate.addEventListener("click", darValor)
 
 darkb.addEventListener("click", d => {
   body.classList.toggle("darkmode");
@@ -45,7 +45,22 @@ function darClick() {
   }
 }
 
+calculate.addEventListener("click", darValor);
+
 function darValor() {
   let weightValue = document.getElementById("weight").value;
-  document.getElementById("calculator-answer-1").innerHTML = weightValue;
+  document.getElementById("calculator-answer").innerHTML = "Tu tasa metabolica basal es de: " + weightValue;
+}
+
+// HOMBRES   TMB= (10 x peso de Kg) + (6,25 x altura en cm) – (5 x edad en años) +  5
+
+// MUJERES     TMB= (10 x peso en kg) + (6,25 x altura en cm) – (5 x edad en años) – 161
+
+function radioCheck() {
+  if(document.getElementById("hombre").checked){
+    plusValue = 5
+  } else if(document.getElementById("mujer").checked) {
+    plusValue = (-161);
+  }
+  return plusValue;
 }
