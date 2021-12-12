@@ -2,8 +2,6 @@ const darkb = document.querySelector("#dark-mode-button__container");
 const darkb2 = document.querySelector("#dark-mode-button__container--id");
 const body = document.querySelector("body");
 const main = document.querySelector("main");
-var height = document.getElementById("height");
-var age = document.getElementById("age");
 var tmb = document.getElementById("tmb");
 var exercise = document.getElementById("exercise");
 const calculate = document.getElementById("calculate")
@@ -45,16 +43,7 @@ function darClick() {
   }
 }
 
-calculate.addEventListener("click", darValor);
-
-function darValor() {
-  let weightValue = document.getElementById("weight").value;
-  document.getElementById("calculator-answer").innerHTML = "Tu tasa metabolica basal es de: " + weightValue;
-}
-
-// HOMBRES   TMB= (10 x peso de Kg) + (6,25 x altura en cm) – (5 x edad en años) +  5
-
-// MUJERES     TMB= (10 x peso en kg) + (6,25 x altura en cm) – (5 x edad en años) – 161
+calculate.addEventListener("click", calcularTmb);
 
 function radioCheck() {
   if(document.getElementById("hombre").checked){
@@ -64,3 +53,19 @@ function radioCheck() {
   }
   return plusValue;
 }
+
+function calcularTmb() {
+  let weightValue = document.getElementById("weight").value;
+  let heightValue = document.getElementById("height").value;
+  let ageValue = document.getElementById("age").value;
+
+  radioCheck();
+
+  let tmbValue = (10 * weightValue) + (6.25 * heightValue) - (5 * ageValue) + plusValue;
+
+  document.getElementById("calculator-answer").innerHTML = "Tu tasa metabolica basal es de: " + tmbValue + "Cal";
+}
+
+// HOMBRES   TMB= (10 x peso de Kg) + (6,25 x altura en cm) – (5 x edad en años) +  5
+
+// MUJERES     TMB= (10 x peso en kg) + (6,25 x altura en cm) – (5 x edad en años) – 161
