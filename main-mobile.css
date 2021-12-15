@@ -1050,6 +1050,7 @@ main.main--calculator div.all-inputs__container div.calculation__container div.c
 		border-radius: 50%;
 		margin-top: 10px;
 		margin-bottom: 15px;
+		cursor: pointer;
 }
 main.main--calculator div.all-inputs__container div.calculation__container div.calculation label.gender div.input-gender__container label.gender-label {
 		font-family: "Roboto", sans-serif;
@@ -1058,6 +1059,10 @@ main.main--calculator div.all-inputs__container div.calculation__container div.c
 		color: #363636;
 		margin-right: 10px;
 		margin-bottom: 5px;
+		cursor: pointer;
+}
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation label.gender div.input-gender__container label.gender-label:focus {
+		color: #49b7f2;
 }
 main.main--calculator div.all-inputs__container div.calculation__container div.calculation label.gender div.input-gender__container input#hombre {
 		margin-right: 35px;
@@ -1090,16 +1095,17 @@ main.main--calculator div.all-inputs__container div.calculation__container div.c
 main.main--calculator div.all-inputs__container div.calculation__container div.calculation input {
 		font-family: "Roboto", sans-serif;
 		font-size: 1.1rem;
-		font-weight: 300;
-		color: #c6c6c6;
+		font-weight: 400;
+		color: #363636;
 		padding: 10px;
 		outline: none;
 		width: 250px;
 		height: 35px;
 		border-radius: 7px;
 		margin-top: 8px;
-		border: solid 2px #9c9c9c;
+		border: solid 2px rgba(54, 54, 54, 0.75);
 }
 main.main--calculator div.all-inputs__container div.calculation__container div.calculation input:focus {
 		border: solid 2px #49b7f2;
+		color: #363636;
 }

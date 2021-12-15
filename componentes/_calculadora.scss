@@ -65,6 +65,7 @@ main.main--calculator {
               border-radius: 50%;
               margin-top: 10px;
               margin-bottom: 15px;
+              cursor: pointer;
             }
             label.gender-label {
               font-family: $fuente_texto;
@@ -73,6 +74,10 @@ main.main--calculator {
               color: $color_footer;
               margin-right: 10px;
               margin-bottom: 5px;
+              cursor: pointer;
+            }
+            label.gender-label:focus {
+              color: $color_header;
             }
             input#hombre {
               margin-right: 35px;
@@ -105,18 +110,19 @@ main.main--calculator {
         input {
           font-family: $fuente_texto;
           font-size: 1.1rem;
-          font-weight: 300;
-          color: #c6c6c6;
+          font-weight: 400;
+          color: $color_footer;
           padding: 10px;
           outline: none;
           width: 250px;
           height: 35px;
           border-radius: 7px;
           margin-top: 8px;
-          border: solid 2px #9c9c9c;
+          border: solid 2px fade-out($color: $color_footer, $amount: 0.25);;
         }
         input:focus {
           border: solid 2px $color_header;
+          color: $color_footer;
         }
       }
     }
