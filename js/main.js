@@ -4,7 +4,8 @@ const body = document.querySelector("body");
 const main = document.querySelector("main");
 const calculate = document.getElementById("calculate")
 const calculateAdelgazar = document.getElementById("calculate-2")
-const calculateEngordar = document.getElementById("calculate-3")
+const calculateCrecer = document.getElementById("calculate-3")
+var tmbValue;
 var plusValue;
 
 load();
@@ -43,8 +44,6 @@ function darClick() {
   }
 }
 
-calculate.addEventListener("click", calcularTmb);
-
 function radioCheck() {
   if(document.getElementById("hombre").checked){
     plusValue = 5
@@ -54,6 +53,8 @@ function radioCheck() {
   return plusValue;
 }
 
+calculate.addEventListener("click", calcularTmb);
+
 function calcularTmb() {
   let weightValue = document.getElementById("weight").value;
   let heightValue = document.getElementById("height").value;
@@ -61,52 +62,78 @@ function calcularTmb() {
 
   radioCheck();
 
-  let tmbValue = (10 * weightValue) + (6.25 * heightValue) - (5 * ageValue) + plusValue;
+  tmbValue = (10 * weightValue) + (6.25 * heightValue) - (5 * ageValue) + plusValue;
 
-  document.getElementById("calculator-answer").innerHTML = "Tu tasa metabólica basal es de: " + tmbValue + " Cal";
+  document.getElementById("calculator-answer-tmb").innerHTML = "Tu tasa metabólica basal es de: " + tmbValue + " Cal";
 }
 
 calculateAdelgazar.addEventListener("click", adelgazar);
 
 function adelgazar() {
-  let tmbFinalValue = document.getElementById("tmb").value;
-  let exerciseValue = document.getElementById("exercise").value;
+  const tmbFinalValue = document.getElementById("tmb").value;
+  let exerciseOption = document.getElementById("exercise").value;
+  var calParaAdelgazar;
 
-  switch (exerciseValue) {
+  switch (exerciseOption) {
     case "Atleta":
-      let calParaAdelgazar = tmbFinalValue * 1.9;
-      document.getElementById("calculator-answer").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
+      var calParaAdelgazar = (tmbFinalValue * 1.9) - 500;
+      document.getElementById("calculator-answer-adelgazar").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
     break;
     case "Mucho":
-      let calParaAdelgazar = tmbFinalValue * 1.72;
-      document.getElementById("calculator-answer").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
+      var calParaAdelgazar = (tmbFinalValue * 1.72) - 500;
+      document.getElementById("calculator-answer-adelgazar").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
     break;
     case "Medio":
-      let calParaAdelgazar = tmbFinalValue * 1.55;
-      document.getElementById("calculator-answer").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
+      var calParaAdelgazar = (tmbFinalValue * 1.55) - 500;
+      document.getElementById("calculator-answer-adelgazar").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
     break;
     case "Ligero":
-      let calParaAdelgazar = tmbFinalValue * 1.375;
-      document.getElementById("calculator-answer").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
+      var calParaAdelgazar = (tmbFinalValue * 1.375) - 500;
+      document.getElementById("calculator-answer-adelgazar").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
     break;
     case "Poco":
-      let calParaAdelgazar = tmbFinalValue * 1.2;
-      document.getElementById("calculator-answer").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
+      var calParaAdelgazar = (tmbFinalValue * 1.2) - 500;
+      document.getElementById("calculator-answer-adelgazar").innerHTML = "Deberías consumir " + calParaAdelgazar + " Cal aproximadamente para adelgazar";
     break;
     case "Nada":
-      document.getElementById("calculator-answer").innerHTML = "No te rindas, levantate y cambia tu vida, ¡nosotros creemos en ti!";
+      document.getElementById("calculator-answer-adelgazar").innerHTML = "No te rindas, levantate y cambia tu vida, ¡nosotros creemos en ti!";
     break;
     default:
-      document.getElementById("calculator-answer").innerHTML = "Por favor escoge una de las opciones anteriores"
+      document.getElementById("calculator-answer-adelgazar").innerHTML = "Por favor escoge una de las opciones anteriores"
   }
 }
 
-// HOMBRES   TMB= (10 x peso de Kg) + (6,25 x altura en cm) – (5 x edad en años) +  5
+calculateCrecer.addEventListener("click", crecer);
 
-// MUJERES     TMB= (10 x peso en kg) + (6,25 x altura en cm) – (5 x edad en años) – 161
-
-// TMB x 1,2: Poco o ningún ejercicio
-// TMB x 1,375: Ejercicio ligero (1 a 3 días en semana)
-// TMB x 1,55: Ejercicio moderado (3 a 5 días en semana)
-// TMB x 1,72: Deportista (6 -7 días en semana)
-// TMB x 1,9: Atleta profesional (entrenamientos de mañana y tarde)
+function crecer() {
+  const tmbFinalValue = document.getElementById("tmb-2").value;
+  let exerciseOption = document.getElementById("exercise-2").value;
+  var calParaCrecer;
+  switch (exerciseOption) {
+    case "Atleta":
+      var calParaCrecer = (tmbFinalValue * 1.9) + 500;
+      document.getElementById("calculator-answer-crecer").innerHTML = "Deberías consumir " + calParaCrecer + " Cal aproximadamente para crecer";
+    break;
+    case "Mucho":
+      var calParaCrecer = (tmbFinalValue * 1.72) + 500;
+      document.getElementById("calculator-answer-crecer").innerHTML = "Deberías consumir " + calParaCrecer + " Cal aproximadamente para crecer";
+    break;
+    case "Medio":
+      var calParaCrecer = (tmbFinalValue * 1.55) + 500;
+      document.getElementById("calculator-answer-crecer").innerHTML = "Deberías consumir " + calParaCrecer + " Cal aproximadamente para crecer";
+    break;
+    case "Ligero":
+      var calParaCrecer = (tmbFinalValue * 1.375) + 500;
+      document.getElementById("calculator-answer-crecer").innerHTML = "Deberías consumir " + calParaCrecer + " Cal aproximadamente para crecer";
+    break;
+    case "Poco":
+      var calParaCrecer = (tmbFinalValue * 1.2) + 500;
+      document.getElementById("calculator-answer-crecer").innerHTML = "Deberías consumir " + calParaCrecer + " Cal aproximadamente para crecer";
+    break;
+    case "Nada":
+      document.getElementById("calculator-answer-crecer").innerHTML = "No te rindas, levantate y cambia tu vida, ¡nosotros creemos en ti!";
+    break;
+    default:
+      document.getElementById("calculator-answer-crecer").innerHTML = "Por favor escoge una de las opciones anteriores"
+  }
+}

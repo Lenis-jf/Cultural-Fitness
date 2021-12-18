@@ -1006,7 +1006,7 @@ main.main--calculator div.all-inputs__container div.calculation__container div.c
 		    -ms-flex-align: start;
 		        align-items: flex-start;
 }
-main.main--calculator div.all-inputs__container div.calculation__container div.calculation p#calculator-answer {
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation p.answer-paragraph {
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
 		font-size: 1.3rem;

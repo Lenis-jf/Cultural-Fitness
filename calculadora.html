@@ -82,15 +82,15 @@
 			<br>
 			<h2 class="calc-h2">(Tasa metabólica basal)</h2>
 			<div class="calculation">
-				<label for="calculator-question__input" class="calculator-question__container">
+				<label for="weight" class="calculator-question__container">
 					<p class="paragraph">¿Cuanto pesas?</p>
 				</label>
 				<input placeholder="89Kg" type="number" id="weight">
-				<label for="calculator-question__input" class="calculator-question__container">
+				<label for="height" class="calculator-question__container">
 					<p class="paragraph">¿Cuanto mides?</p>
 				</label>
 				<input placeholder="175cm (debe de ser en cm)" type="number" id="height">
-				<label for="calculator-question__input" class="calculator-question__container">
+				<label for="age" class="calculator-question__container">
 					<p class="paragraph">¿Cuantos años tienes?</p>
 				</label>
 				<input placeholder="20" type="number" id="age">
@@ -105,7 +105,7 @@
 					</div>
 				</label>
 				<button role="button" class="calculate-button" id="calculate">CALCULAR</button>
-				<p id="calculator-answer"></p>
+				<p class="answer-paragraph" id="calculator-answer-tmb"></p>
 			</div>
 		</div>
 		<div class="calculation__container">
@@ -113,14 +113,14 @@
 			<br>
 			<h2 class="calc-h2">(Debes usar el valor que obtuviste arriba, Osea tu TMB o Tasa Metabólica Basal)</h2>
 			<div class="calculation">
-				<label for="calculator-question__input" class="calculator-question__container">
+				<label for="tmb" class="calculator-question__container">
 					<p class="paragraph">¿Cual es tu TMB?</p>
 				</label>
-				<input placeholder="2500Cal" type="number" id="calculator-question__input tmb">
-				<label for="calculator-question__input" class="calculator-question__container">
+				<input placeholder="2500Cal" type="number" id="tmb">
+				<label for="exercise" class="calculator-question__container">
 					<p class="paragraph">¿Cuanto ejercicio haces?</p>
 				</label>
-				<input placeholder="Mucho (3 - 5 Días semanales)" type="text" list="ejercicio-semanal" id="calculator-question__input exercise">
+				<input placeholder="Mucho (3 - 5 Días semanales)" type="text" list="ejercicio-semanal" id="exercise">
 				<datalist id="ejercicio-semanal">
 					<option value="Atleta">(Cada día, día y noche)</option>
 					<option value="Mucho">(6 - 7 Días semanales)</option>
@@ -130,22 +130,22 @@
 					<option value="Nada"></option> 
 				</datalist>
 				<button class="calculate-button" id="calculate-2">CALCULAR</button>
-				<p id="calculator-answer"></p>
+				<p class="answer-paragraph" id="calculator-answer-adelgazar"></p>
 			</div>
 		</div>
 		<div class="calculation__container">
 			<h2 class="calc-h2">Cuantas calorías consumir para aumentar de peso</h2>
 			<br>
-			<h2 class="calc-h2">(Debes usar el valor que obtiviste arriba, Osea tu TMB o Tasa Metabólica Basal)</h2>
+			<h2 class="calc-h2">(Debes usar el valor que obtiviste al principio, Osea tu TMB o Tasa Metabólica Basal)</h2>
 			<div class="calculation">
-				<label for="calculator-question__input" class="calculator-question__container">
+				<label for="tmb-2" class="calculator-question__container">
 					<p class="paragraph">¿Cual es tu TMB?</p>
 				</label>
-				<input placeholder="1890Cal" type="number" id="calculator-question__input tmb">
-				<label for="calculator-question__input" class="calculator-question__container">
+				<input placeholder="1890Cal" type="number" id="tmb-2">
+				<label for="exercise-2" class="calculator-question__container">
 					<p class="paragraph">¿Cuanto ejercicio haces?</p>
 				</label>
-				<input placeholder="Mucho (3 - 5 Días semanales)" type="text" list="ejercicio-semanal" id="calculator-question__input exercise">
+				<input placeholder="Mucho (3 - 5 Días semanales)" type="text" list="ejercicio-semanal" id="exercise-2">
 				<datalist id="ejercicio-semanal">
 					<option value="Atleta">(Cada día, día y noche)</option>
 					<option value="Mucho">(6 - 7 Días semanales)</option>
@@ -155,7 +155,7 @@
 					<option value="Nada"></option> 
 				</datalist>
 				<button class="calculate-button" id="calculate-3">CALCULAR</button>
-				<p id="calculator-answer"></p>
+				<p class="answer-paragraph" id="calculator-answer-crecer"></p>
 			</div>
 		</div>
 	</div>
