@@ -109,13 +109,13 @@ main section.blog__info--title {
 				align-items: center;
 				justify-content: center;
 				font-size: 1.2rem;
-				font-family: $fuente_titulos;
-				font-weight: 300;
+				font-family: $fuente_texto;
+				font-weight: 500;
 				width: 175px;
 				height: 30px;
 				border-radius: 30px;
-				border: 1.5px solid $color_header;
-				background-color: white;
+				border: 2px solid $color_header;
+				background-color: transparent;
 				color: $color_header;
 				transition: all 300ms;
         text-decoration: none;
@@ -123,12 +123,7 @@ main section.blog__info--title {
 			a.recommended-button:hover {
 				color: white;
 				background-color: $color_header;
-        transform: scale(1.3);
-			}
-			a.recommended-button:active {
-				color: white;
-				background-color: $color_header;
-        transform: scale(1.3);
+        transform: scale(1.1);
 			}
 		}
     h4 {

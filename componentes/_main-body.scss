@@ -104,14 +104,15 @@ button.home-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 220px;
+	width: 210px;
 	height: 35px;
 	margin: 0 auto;
 	margin-top: 90px;
 	margin-bottom: 90px;
-	border: 1.5px solid $color_header;
+	border: 2px solid $color_header;
 	border-radius: 15px;
 	background: white;
+	z-index: 0;
 	a.button-text {
 		color: $color_header;
 		font-family: $fuente_texto;
@@ -146,19 +147,19 @@ body.darkmode {
     fill: white;
   }
   svg path.right-arrow--path {
-    fill: $color_header;
+    fill: white;
   }
 	svg path.icon--path {
 		fill: white;
 	}
   button.home-button {
-    background-color: $color_header;
+    background-color: transparent;
     a.button-text {
-      color: white;
+      color: $color_header;
     }
   }
   button.home-button::before {
-    background-color: white;
+    background-color: $color_header;
   }
   .dark-mode__container {
     div#dark-mode-button__container {
@@ -196,16 +197,6 @@ body.darkmode {
 			}
 			ul.benefits-list {
 				color: white;
-			}
-			div.recommended-button__container {
-				a.recommended-button {
-					color: white;
-					background-color: $color_header;
-				}
-				a.recommended-button:hover {
-					color: $color_header;
-					background-color: white;
-				}
 			}
 		}
 	}

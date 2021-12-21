@@ -332,14 +332,15 @@ main.index button.home-button {
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
-		width: 220px;
+		width: 210px;
 		height: 35px;
 		margin: 0 auto;
 		margin-top: 90px;
 		margin-bottom: 90px;
-		border: 1.5px solid #49b7f2;
+		border: 2px solid #49b7f2;
 		border-radius: 15px;
 		background: white;
+		z-index: 0;
 }
 main.index button.home-button a.button-text {
 		color: #49b7f2;
@@ -370,19 +371,19 @@ body.darkmode svg.icon {
 		fill: white;
 }
 body.darkmode svg path.right-arrow--path {
-		fill: #49b7f2;
+		fill: white;
 }
 body.darkmode svg path.icon--path {
 		fill: white;
 }
 body.darkmode button.home-button {
-		background-color: #49b7f2;
+		background-color: transparent;
 }
 body.darkmode button.home-button a.button-text {
-		color: white;
+		color: #49b7f2;
 }
 body.darkmode button.home-button::before {
-		background-color: white;
+		background-color: #49b7f2;
 }
 body.darkmode .dark-mode__container div#dark-mode-button__container div.circle {
 		left: calc(100% - 24.5px);
@@ -412,14 +413,6 @@ body.darkmode section.blog__info--title article.blog__info--body h4 {
 }
 body.darkmode section.blog__info--title article.blog__info--body ul.benefits-list {
 		color: white;
-}
-body.darkmode section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button {
-		color: white;
-		background-color: #49b7f2;
-}
-body.darkmode section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button:hover {
-		color: #49b7f2;
-		background-color: white;
 }
 body.darkmode hr.section-separator {
 		border-bottom: 1px solid rgba(73, 183, 242, 0.3);
@@ -549,13 +542,13 @@ main section.blog__info--title article.blog__info--body div.recommended-button__
 		    -ms-flex-pack: center;
 		        justify-content: center;
 		font-size: 1.2rem;
-		font-family: "Bebas Neue", cursive;
-		font-weight: 300;
+		font-family: "Roboto", sans-serif;
+		font-weight: 500;
 		width: 175px;
 		height: 30px;
 		border-radius: 30px;
-		border: 1.5px solid #49b7f2;
-		background-color: white;
+		border: 2px solid #49b7f2;
+		background-color: transparent;
 		color: #49b7f2;
 		-webkit-transition: all 300ms;
 		transition: all 300ms;
@@ -564,14 +557,8 @@ main section.blog__info--title article.blog__info--body div.recommended-button__
 main section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button:hover {
 		color: white;
 		background-color: #49b7f2;
-		-webkit-transform: scale(1.3);
-		        transform: scale(1.3);
-}
-main section.blog__info--title article.blog__info--body div.recommended-button__container a.recommended-button:active {
-		color: white;
-		background-color: #49b7f2;
-		-webkit-transform: scale(1.3);
-		        transform: scale(1.3);
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
 }
 main section.blog__info--title article.blog__info--body h4 {
 		font-size: 2rem;
@@ -985,6 +972,7 @@ main.main--calculator div.all-inputs__container div.calculation__container label
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
 		font-size: 1.3rem;
+		color: #363636;
 }
 main.main--calculator div.all-inputs__container div.calculation__container label p.paragraph {
 		color: #363636;
@@ -1026,6 +1014,7 @@ main.main--calculator div.all-inputs__container div.calculation__container div.c
 		-webkit-box-align: start;
 		    -ms-flex-align: start;
 		        align-items: flex-start;
+		color: #363636;
 }
 main.main--calculator div.all-inputs__container div.calculation__container div.calculation label.gender p {
 		margin-top: 25px;
@@ -1096,16 +1085,78 @@ main.main--calculator div.all-inputs__container div.calculation__container div.c
 		font-family: "Roboto", sans-serif;
 		font-size: 1.1rem;
 		font-weight: 400;
-		color: #363636;
 		padding: 10px;
 		outline: none;
 		width: 250px;
 		height: 35px;
 		border-radius: 7px;
 		margin-top: 8px;
-		border: solid 2px rgba(54, 54, 54, 0.75);
+		color: #363636;
+		border: solid 2px rgba(54, 54, 54, 0.55);
+}
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation input::-webkit-input-placeholder {
+		color: #c6c6c6;
+}
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation input::-moz-placeholder {
+		color: #c6c6c6;
+}
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation input:-ms-input-placeholder {
+		color: #c6c6c6;
+}
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation input::-ms-input-placeholder {
+		color: #c6c6c6;
+}
+main.main--calculator div.all-inputs__container div.calculation__container div.calculation input::placeholder {
+		color: #c6c6c6;
 }
 main.main--calculator div.all-inputs__container div.calculation__container div.calculation input:focus {
-		border: solid 2px #49b7f2;
-		color: #363636;
+		border-color: #49b7f2;
+}
+
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container label {
+		color: white;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container label p.paragraph {
+		color: white;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation p.answer-paragraph {
+		color: white;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation label.gender {
+		color: white;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation label.gender p {
+		color: white;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation label.gender div.input-gender__container label.gender-label {
+		color: white;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation label.gender div.input-gender__container label.gender-label:focus {
+		color: #49b7f2;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation button.calculate-button {
+		background-color: transparent;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation button.calculate-button:hover {
+		background-color: #49b7f2;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation input {
+		color: white;
+		background-color: transparent;
+		border-color: white;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation input::-webkit-input-placeholder {
+		color: #d6d6d6;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation input::-moz-placeholder {
+		color: #d6d6d6;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation input:-ms-input-placeholder {
+		color: #d6d6d6;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation input::-ms-input-placeholder {
+		color: #d6d6d6;
+}
+body.darkmode main.main--calculator div.all-inputs__container div.calculation__container div.calculation input::placeholder {
+		color: #d6d6d6;
 }
