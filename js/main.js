@@ -137,3 +137,7 @@ function crecer() {
       document.getElementById("calculator-answer-crecer").innerHTML = "Por favor escoge una de las opciones anteriores"
   }
 }
+
+function alertAdvice(message) {
+  
+}
