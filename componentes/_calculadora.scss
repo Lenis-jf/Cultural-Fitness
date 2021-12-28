@@ -1,53 +1,8 @@
 main.main--calculator {
   padding-left: 10px;
   padding-right: 10px;
-  div#alert-container {
-    width: 95%;
-    height: 350px;
-    padding-bottom: 20px;
-    background-color: #F4F4F4;
-    border-radius: 20px;
-    position: sticky;
-    top: calc(50vh - 175px);
-    margin: 0 auto;
-    overflow: hidden;
-    box-shadow: 0 5px 10px 3px fade-out($color: #363636, $amount: 0.4);
-    div.blue-part {
-      background-color: $color_header;
-      display: flex;
-      justify-content: center;
-      align-self: flex-start;
-      width: 100%;
-      height: 60px;
-    }
-    p#answer-space {
-      width: 90%;
-      height: auto;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      margin: 0 auto;
-    }
-    button#continue-button {
-      font-family: $fuente_texto;
-      font-size: 1.4rem;
-      font-weight: 400;
-      width: 120px;
-      height: 35px;
-      border-radius: 15px;
-      border: 2px solid $color_header;
-      color: $color_header;
-      transition: transform 400ms ease-in-out;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-    }
-    button#continue-button:hover {
-      background-color: $color_header;
-      color: white;
-      transform: scale(1.3);
-    }
-  }
+  position: relative;
+  filter: blur(2px);
   div.home-icon__container {
     margin-top: 0px;
   }
