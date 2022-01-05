@@ -69,58 +69,59 @@
 	</div>
 </header>
 <main class="index main--calculator">
-	<div class="home-icon__container calc blur">
-    <svg class="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="black" width="100" height="100"><path d="m6 3v26h20v-26zm2 2h16v22h-16zm2 2v6h12v-6zm2 2h8v2h-8zm-1 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"/></svg>
-  </div>
-  <div class="titulos-principales blur">
-		<h1>TU NUEVO LUGAR FAVORITO</h1>
-		<h2>CALCÚLA TODO LO QUE NECESITAS SABER AQUÍ</h2>
+	<div class="" id="blur-1">
+		<div class="home-icon__container calc">
+			<svg class="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="black" width="100" height="100"><path d="m6 3v26h20v-26zm2 2h16v22h-16zm2 2v6h12v-6zm2 2h8v2h-8zm-1 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"/></svg>
+		</div>
+		<div class="titulos-principales">
+			<h1>TU NUEVO LUGAR FAVORITO</h1>
+			<h2>CALCÚLA TODO LO QUE NECESITAS SABER AQUÍ</h2>
+		</div>
 	</div>
-	<div class="all-inputs__container blur">
-		<div class="calculation__container blur">
-			<h2 class="calc-h2 blur">Calcular calorías que quema tu cuerpo naturalmente al día</h2>
+	<div class="all-inputs__container" id="blur-2">
+		<div class="calculation__container">
+			<h2 class="calc-h2">Calcular calorías que quema tu cuerpo naturalmente al día</h2>
 			<br>
-			<h2 class="calc-h2 blur">(Tasa metabólica basal)</h2>
-			<div class="calculation blur">
-				<label for="weight" class="calculator-question__container blur">
-					<p class="paragraph blur">¿Cuanto pesas?</p>
+			<h2 class="calc-h2">(Tasa metabólica basal)</h2>
+			<div class="calculation">
+				<label for="weight" class="calculator-question__container">
+					<p class="paragraph">¿Cuanto pesas?</p>
 				</label>
-				<input placeholder="89Kg" type="number" id="weight" class="blur">
-				<label for="height" class="calculator-question__container blur">
-					<p class="paragraph blur">¿Cuanto mides?</p>
+				<input placeholder="89Kg" type="number" id="weight">
+				<label for="height" class="calculator-question__container">
+					<p class="paragraph">¿Cuanto mides?</p>
 				</label>
-				<input placeholder="175cm (debe de ser en cm)" type="number" id="height" class="blur">
-				<label for="age" class="calculator-question__container blur">
-					<p class="paragraph blur">¿Cuantos años tienes?</p>
+				<input placeholder="175cm (debe de ser en cm)" type="number" id="height">
+				<label for="age" class="calculator-question__container">
+					<p class="paragraph">¿Cuantos años tienes?</p>
 				</label>
-				<input placeholder="20" type="number" id="age" class="blur">
+				<input placeholder="20" type="number" id="age">
 				
-				<label class="calculator-question__container gender blur">
-					<p class="paragraph blur">¿Cual es tu genero?</p>
-					<div class="input-gender__container blur">
-						<label class="gender-label blur" for="hombre">Hombre</label>
-						<input type="radio" name="genero" id="hombre" required class="blur">
-						<label class="gender-label blur" for="mujer">Mujer</label>
-						<input type="radio" name="genero" id="mujer" class="blur">
+				<label class="calculator-question__container gender">
+					<p class="paragraph">¿Cual es tu genero?</p>
+					<div class="input-gender__container">
+						<label class="gender-label" for="hombre">Hombre</label>
+						<input type="radio" name="genero" id="hombre" required>
+						<label class="gender-label" for="mujer">Mujer</label>
+						<input type="radio" name="genero" id="mujer">
 					</div>
 				</label>
-				<button role="button" class="calculate-button blur" id="calculate">CALCULAR</button>
-				<p class="answer-paragraph blur" id="calculator-answer-tmb"></p>
+				<button role="button" class="calculate-button" id="calculate">CALCULAR</button>
 			</div>
 		</div>
-		<div class="calculation__container blur">
-			<h2 class="calc-h2 blur">Cuantas calorías consumir para adelgazar</h2>
+		<div class="calculation__container">
+			<h2 class="calc-h2">Cuantas calorías consumir para adelgazar</h2>
 			<br>
-			<h2 class="calc-h2 blur">(Debes usar el valor que obtuviste arriba, Osea tu TMB o Tasa Metabólica Basal)</h2>
-			<div class="calculation blur">
-				<label for="tmb" class="calculator-question__container blur">
-					<p class="paragraph blur">¿Cual es tu TMB?</p>
+			<h2 class="calc-h2">(Debes usar el valor que obtuviste arriba, Osea tu TMB o Tasa Metabólica Basal)</h2>
+			<div class="calculation">
+				<label for="tmb" class="calculator-question__container">
+					<p class="paragraph">¿Cual es tu TMB?</p>
 				</label>
-				<input placeholder="2500Cal" type="number" id="tmb" class="blur">
-				<label for="exercise" class="calculator-question__container blur">
-					<p class="paragraph blur">¿Cuanto ejercicio haces?</p>
+				<input placeholder="2500Cal" type="number" id="tmb">
+				<label for="exercise" class="calculator-question__container">
+					<p class="paragraph">¿Cuanto ejercicio haces?</p>
 				</label>
-				<input placeholder="Mucho (3 - 5 Días semanales)" type="text" list="ejercicio-semanal" id="exercise" class="blur">
+				<input placeholder="Mucho (3 - 5 Días semanales)" type="text" list="ejercicio-semanal" id="exercise">
 				<datalist id="ejercicio-semanal">
 					<option value="Atleta">(Cada día, día y noche)</option>
 					<option value="Mucho">(6 - 7 Días semanales)</option>
@@ -129,23 +130,22 @@
 					<option value="Poco">(Poco ejercicio)</option>
 					<option value="Nada"></option> 
 				</datalist>
-				<button class="calculate-button blur" id="calculate-2">CALCULAR</button>
-				<p class="answer-paragraph blur" id="calculator-answer-adelgazar"></p>
+				<button class="calculate-button" id="calculate-2">CALCULAR</button>
 			</div>
 		</div>
-		<div class="calculation__container blur">
-			<h2 class="calc-h2 blur">Cuantas calorías consumir para aumentar de peso</h2>
+		<div class="calculation__container">
+			<h2 class="calc-h2">Cuantas calorías consumir para aumentar de peso</h2>
 			<br>
-			<h2 class="calc-h2 blur">(Debes usar el valor que obtiviste al principio, Osea tu TMB o Tasa Metabólica Basal)</h2>
-			<div class="calculation blur">
-				<label for="tmb-2" class="calculator-question__container blur">
-					<p class="paragraph blur">¿Cual es tu TMB?</p>
+			<h2 class="calc-h2">(Debes usar el valor que obtiviste al principio, Osea tu TMB o Tasa Metabólica Basal)</h2>
+			<div class="calculation">
+				<label for="tmb-2" class="calculator-question__container">
+					<p class="paragraph">¿Cual es tu TMB?</p>
 				</label>
-				<input placeholder="1890Cal" type="number" id="tmb-2" class="blur">
-				<label for="exercise-2" class="calculator-question__container blur">
-					<p class="paragraph blur">¿Cuanto ejercicio haces?</p>
+				<input placeholder="1890Cal" type="number" id="tmb-2">
+				<label for="exercise-2" class="calculator-question__container">
+					<p class="paragraph">¿Cuanto ejercicio haces?</p>
 				</label>
-				<input placeholder="Mucho (3 - 5 Días semanales)" type="text" list="ejercicio-semanal" id="exercise-2" class="blur">
+				<input placeholder="Mucho (3 - 5 Días semanales)" type="text" list="ejercicio-semanal" id="exercise-2">
 				<datalist id="ejercicio-semanal">
 					<option value="Atleta">(Cada día, día y noche)</option>
 					<option value="Mucho">(6 - 7 Días semanales)</option>
@@ -154,17 +154,16 @@
 					<option value="Poco">(Poco ejercicio)</option>
 					<option value="Nada"></option> 
 				</datalist>
-				<button class="calculate-button blur" id="calculate-3">CALCULAR</button>
-				<p class="answer-paragraph blur" id="calculator-answer-crecer"></p>
+				<button class="calculate-button" id="calculate-3">CALCULAR</button>
 			</div>
 		</div>
 	</div>
-	<div id="alert-container">
+	<div class="alert__container" id="alert-container">
 		<div class="blue-part">
 			<object data="./componentes/imgs/CULTURAL-FITNESS.svg" type="image/svg+xml"></object>
 		</div>
 		<div class="text-button-container">
-			<p id="answer-space">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+			<p id="answer-space"></p>
 			<p>Continua averiguando cosas sobre ti y tu cuerpo</p>
 			<button id="continue-button">CONTINUAR</button>
 		</div>

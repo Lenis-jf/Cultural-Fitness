@@ -1162,12 +1162,17 @@ body.darkmode main.main--calculator div.all-inputs__container div.calculation__c
 		color: #d6d6d6;
 }
 
+#blur-1, #blur-2 {
+		-webkit-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+}
+
 .blur {
 		-webkit-filter: blur(2px);
 		        filter: blur(2px);
 }
 
-div#alert-container {
+div.alert__container {
 		width: 90%;
 		max-width: 380px;
 		height: 300px;
@@ -1180,8 +1185,9 @@ div#alert-container {
 		position: sticky;
 		bottom: calc(50% - 150px);
 		margin: 0 auto;
+		display: none;
 }
-div#alert-container div.blue-part {
+div.alert__container div.blue-part {
 		background-color: #49b7f2;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -1194,7 +1200,7 @@ div#alert-container div.blue-part {
 		width: 100%;
 		height: 60px;
 }
-div#alert-container div.text-button-container {
+div.alert__container div.text-button-container {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -1216,15 +1222,15 @@ div#alert-container div.text-button-container {
 		height: 100%;
 		text-align: center;
 }
-div#alert-container div.text-button-container p#answer-space {
+div.alert__container div.text-button-container p#answer-space {
 		width: 75%;
 		height: auto;
 		margin: 0 auto;
 }
-div#alert-container div.text-button-container p#answer-space + p {
+div.alert__container div.text-button-container p#answer-space + p {
 		width: 70%;
 }
-div#alert-container div.text-button-container button#continue-button {
+div.alert__container div.text-button-container button#continue-button {
 		width: 120px;
 		height: 35px;
 		border-radius: 15px;
@@ -1246,8 +1252,9 @@ div#alert-container div.text-button-container button#continue-button {
 		margin: 0 auto;
 		margin-bottom: 30px;
 		cursor: pointer;
+		background: transparent;
 }
-div#alert-container div.text-button-container button#continue-button:hover {
+div.alert__container div.text-button-container button#continue-button:hover {
 		background-color: #49b7f2;
 		color: white;
 		-webkit-transform: scale(1.3);
