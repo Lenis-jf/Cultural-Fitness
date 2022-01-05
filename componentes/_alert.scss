@@ -1,15 +1,19 @@
+.blur {
+  filter: blur(2px);
+}
+
 div#alert-container {
   width: 90%;
+  max-width: 380px;
   height: 300px;
   padding-bottom: 20px;
   background-color: #F4F4F4;
   border-radius: 20px;
-  position: absolute;
-  top: calc(50vh - 175px);
-  margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 5px 10px 3px fade-out($color: #363636, $amount: 0.4);
-  filter: none;
+  position: sticky;
+  bottom: calc(50% - 150px);
+  margin: 0 auto;
   div.blue-part {
     background-color: $color_header;
     display: flex;
@@ -50,6 +54,7 @@ div#alert-container {
       align-items: center;
       margin: 0 auto;
       margin-bottom: 30px;
+      cursor: pointer;
     }
     button#continue-button:hover {
       background-color: $color_header;

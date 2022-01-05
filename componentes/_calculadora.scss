@@ -2,7 +2,6 @@ main.main--calculator {
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-  filter: blur(2px);
   div.home-icon__container {
     margin-top: 0px;
   }
@@ -11,7 +10,7 @@ main.main--calculator {
     flex-direction: column;
     align-content: center;
     margin-bottom: 50px;
-    margin-top: 20px;
+    margin-top: 20px; 
   }
   div.all-inputs__container {
     display: flex;
@@ -122,7 +121,7 @@ main.main--calculator {
           border-radius: 7px;
           margin-top: 8px;
           color: $color_footer;
-          border: solid 2px fade-out($color: $color_footer, $amount: 0.45);;
+          border: solid 2px fade-out($color: $color_footer, $amount: 0.45);
         }
         input::placeholder {
           color: #c6c6c6;

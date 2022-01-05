@@ -928,8 +928,6 @@ main.main--calculator {
 		padding-left: 10px;
 		padding-right: 10px;
 		position: relative;
-		-webkit-filter: blur(2px);
-		        filter: blur(2px);
 }
 main.main--calculator div.home-icon__container {
 		margin-top: 0px;
@@ -1164,20 +1162,24 @@ body.darkmode main.main--calculator div.all-inputs__container div.calculation__c
 		color: #d6d6d6;
 }
 
+.blur {
+		-webkit-filter: blur(2px);
+		        filter: blur(2px);
+}
+
 div#alert-container {
 		width: 90%;
+		max-width: 380px;
 		height: 300px;
 		padding-bottom: 20px;
 		background-color: #F4F4F4;
 		border-radius: 20px;
-		position: absolute;
-		top: calc(50vh - 175px);
-		margin: 0 auto;
 		overflow: hidden;
 		-webkit-box-shadow: 0 5px 10px 3px rgba(54, 54, 54, 0.6);
 		        box-shadow: 0 5px 10px 3px rgba(54, 54, 54, 0.6);
-		-webkit-filter: none;
-		        filter: none;
+		position: sticky;
+		bottom: calc(50% - 150px);
+		margin: 0 auto;
 }
 div#alert-container div.blue-part {
 		background-color: #49b7f2;
@@ -1243,6 +1245,7 @@ div#alert-container div.text-button-container button#continue-button {
 		        align-items: center;
 		margin: 0 auto;
 		margin-bottom: 30px;
+		cursor: pointer;
 }
 div#alert-container div.text-button-container button#continue-button:hover {
 		background-color: #49b7f2;
