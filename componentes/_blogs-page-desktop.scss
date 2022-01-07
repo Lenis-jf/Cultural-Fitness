@@ -1,14 +1,23 @@
 a.blog-representative__image--container {
   margin-top: 40px;
   .blog-representative__image {
-    height: 350px;
-    max-width: 600px;
+    height: 335px;
+    max-width: 445px;
   }
 }
 
-div.blogs-page__container {
+div.images-flex__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+  padding: 0 20px 0 20px;
   div.paragraphs__container {
-    max-width: 600px;
+    max-width: 380px;
+    p.paragraph {
+      text-align: center;
+    }
     a.read-more {
       font-size: 1.6rem;
       margin-top: 15px;

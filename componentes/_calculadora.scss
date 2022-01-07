@@ -69,6 +69,7 @@ main.main--calculator {
               margin-top: 10px;
               margin-bottom: 15px;
               cursor: pointer;
+              background: transparent;
             }
             label.gender-label {
               font-family: $fuente_texto;
@@ -104,6 +105,7 @@ main.main--calculator {
           cursor: pointer;
           transition: all 400ms;
           outline: none;
+          background: transparent;
         }
         button.calculate-button:hover {
           transform: scale(1.1);
@@ -122,9 +124,10 @@ main.main--calculator {
           margin-top: 8px;
           color: $color_footer;
           border: solid 2px fade-out($color: $color_footer, $amount: 0.45);
+          background: transparent;
         }
         input::placeholder {
-          color: #c6c6c6;
+          color: #8f8f8f;
         }
         input:focus {
           border-color: $color_header;

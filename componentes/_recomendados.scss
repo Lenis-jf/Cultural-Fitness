@@ -18,7 +18,7 @@ main.blog__main {
     width: 250px;
     height: 250px;
     min-width: 100px;
-    box-shadow:  0px 8px 20px 0px rgba(153,153,153,0.7);
+    box-shadow:  0px 3px 10px 5px fade-out($color: #363636, $amount: 0.8);
     margin-top: 40px;
     margin-bottom: 10px;
     margin-left: 25px;
@@ -29,5 +29,13 @@ main.blog__main {
   .product:hover {
     transform: scale(1.2);
     opacity: 0.7;
+  }
+}
+
+body.darkmode {
+  .product__container {
+    .product {
+      box-shadow:  0px 3px 10px 5px fade-out($color: #F4F4F4, $amount: 0.8);
+    }
   }
 }

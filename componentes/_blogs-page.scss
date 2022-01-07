@@ -10,6 +10,7 @@ a.blog-representative__image--container {
     height: 200px;
     transition: all 0.3s;
     border-radius: 8px;
+    box-shadow: 0px 4px 12px 3px rgb(54 54 54 / 50%);
   }
 }
 
@@ -44,4 +45,12 @@ a.read-more {
 a.read-more:hover {
   color: $color_header;
   background-size: 100% 2px;
+}
+
+body.darkmode {
+  a.blog-representative__image--container {
+    .blog-representative__image {
+      box-shadow: 0px 4px 12px 3px fade-out($color: #f4f4f4, $amount: 0.9);
+    }
+  }
 }
