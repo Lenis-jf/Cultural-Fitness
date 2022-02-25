@@ -964,8 +964,8 @@ main.main--calculator div.titulos-principales {
 		        flex-direction: column;
 		-ms-flex-line-pack: center;
 		    align-content: center;
-		margin-bottom: 50px;
 		margin-top: 20px;
+		margin-bottom: 50px;
 }
 main.main--calculator div.all-inputs__container {
 		display: -webkit-box;
